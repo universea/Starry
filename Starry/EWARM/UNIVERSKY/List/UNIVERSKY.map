@@ -1,0 +1,2085 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.1.15669/W32 for ARM                12/Nov/2018  20:13:29
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Exe\UNIVERSKY.out
+#    Map file     =  
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\List\UNIVERSKY.map
+#    Command line =  
+#        -f C:\Users\ADMINI~1\AppData\Local\Temp\EWDB0B.tmp
+#        (G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Accelerometer.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\adc.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Ahrs.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\AhrsAux.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Ak8975.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Barometer.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Battery.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Board.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\bsklink.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\bsklinkDecode.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\bsklinkSend.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\cmsis_os.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\ControlTask.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\croutine.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Declination.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\event_groups.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\FaultDetect.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\FlightControl.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\FlightStatus.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\freertos.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\gpio.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Gps.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Gyroscope.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\heap_4.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Icm20689.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Kalman3.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\LevenbergMarquardt.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\list.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\LowPassFilter.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Magnetometer.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\main.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MathTool.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Matrix3.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MavlinkDecode.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MavlinkNotice.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MavlinkParam.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MavlinkSend.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Message.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MessageQueue.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MessageTask.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\MissionControl.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Module.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\ModuleTask.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Motor.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Navigation.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\NavigationTask.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Parameter.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Pid.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\port.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\portasm.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\PwmIn.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Quaternion.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\queue.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Rc.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Rotation.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\SafeControl.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Sensor.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\SensorTask.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\spi.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Spl06.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\startup_stm32f407xx.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_adc.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_adc_ex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_cortex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_dma.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_dma_ex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_flash.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_flash_ex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_flash_ramfunc.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_gpio.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_msp.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_pcd.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_pcd_ex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_pwr.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_pwr_ex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_rcc.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_rcc_ex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_spi.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_tim.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_tim_ex.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_timebase_TIM.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_hal_uart.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_it.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\stm32f4xx_ll_usb.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\system_stm32f4xx.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\tasks.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\tim.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\timers.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Ublox.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usart.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usb_device.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usbd_cdc.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usbd_cdc_if.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usbd_conf.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usbd_core.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usbd_ctlreq.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usbd_desc.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\usbd_ioreq.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\UserControl.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\Vector3.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\W25Qxx.o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj\WayPointControl.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Exe\UNIVERSKY.out --map
+#        G:\Projects\Starry\Starry\EWARM\UNIVERSKY\List\UNIVERSKY.map --config
+#        G:\Projects\Starry\Starry\EWARM/stm32f407xx_flash.icf --semihosting
+#        --entry __iar_program_start "E:\IAR Systems\Embedded Workbench
+#        8.0\arm\CMSIS\Lib\IAR\iar_cortexM4lf_math.a" --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x080fffff] { ro };
+define block CSTACK with size = 5376, alignment = 8 { };
+define block HEAP with size = 1536, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x2001ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address     Size  Object
+  -------            ----        -------     ----  ------
+"A0":                                       0x188
+  .intvec            ro code  0x08000000    0x188  startup_stm32f407xx.o [1]
+                            - 0x08000188    0x188
+
+"P1":                                     0x19414
+  .text              ro code  0x08000188   0x14d4  dlmalloc.o [3]
+  .text              ro code  0x0800165c      0x6  abort.o [3]
+  .text              ro code  0x08001662     0x7a  lz77_init_single.o [5]
+  .text              ro code  0x080016dc     0x2c  xgetmemchunk.o [3]
+  .text              ro code  0x08001708     0x14  exit.o [6]
+  .text              ro code  0x0800171c    0xe5a  bsklinkSend.o [1]
+  .text              ro code  0x08002578    0xdec  Ahrs.o [1]
+  .text              ro code  0x08003364    0x9c4  Navigation.o [1]
+  .text              ro code  0x08003d28     0x48  FltToDbl.o [4]
+  .text              ro code  0x08003d70     0xa6  ABImemcpy.o [5]
+  .text              ro code  0x08003e18    0x126  bsklink.o [1]
+  .text              ro code  0x08003f40    0x700  Message.o [1]
+  .text              ro code  0x08004640    0x398  FlightStatus.o [1]
+  .text              ro code  0x080049d8    0x3f4  Gyroscope.o [1]
+  .text              ro code  0x08004dcc    0xa00  Accelerometer.o [1]
+  .text              ro code  0x080057cc    0x88c  Magnetometer.o [1]
+  .text              ro code  0x08006058    0x168  Barometer.o [1]
+  .text              ro code  0x080061c0    0x17c  MathTool.o [1]
+  .text              ro code  0x0800633c    0x7bc  Ublox.o [1]
+  .text              ro code  0x08006af8     0x68  DblToFlt.o [4]
+  .text              ro code  0x08006b60    0x6fc  Rc.o [1]
+  .text              ro code  0x0800725c    0x2a8  Motor.o [1]
+  .text              ro code  0x08007504    0xde4  FlightControl.o [1]
+  .text              ro code  0x080082e8     0x38  Board.o [1]
+  .text              ro code  0x08008320      0x6  ABImemclr4.o [5]
+  .text              ro code  0x08008328    0x2c8  Kalman3.o [1]
+  .text              ro code  0x080085f0    0x1c4  heap_4.o [1]
+  .text              ro code  0x080087b4    0x304  Vector3.o [1]
+  .text              ro code  0x08008ab8     0x46  U64ToDbl.o [4]
+  .text              ro code  0x08008b00    0x1a2  DblMul.o [4]
+  .text              ro code  0x08008ca4    0x530  AhrsAux.o [1]
+  .text              ro code  0x080091d4    0x458  Gps.o [1]
+  .text              ro code  0x0800962c     0x6a  atan2f.o [4]
+  .text              ro code  0x08009698     0x1e  sqrtf.o [4]
+  .text              ro code  0x080096b8    0xa28  MavlinkParam.o [1]
+  .text              ro code  0x0800a0e0    0xe0c  MavlinkSend.o [1]
+  .text              ro code  0x0800aeec     0x70  usbd_cdc_if.o [1]
+  .text              ro code  0x0800af5c     0x38  FaultDetect.o [1]
+  .text              ro code  0x0800af94    0x460  Sensor.o [1]
+  .text              ro code  0x0800b3f4    0x1e0  cos_sin32.o [4]
+  .text              ro code  0x0800b5d4    0x10e  LowPassFilter.o [1]
+  .text              ro code  0x0800b6e4     0xbc  Parameter.o [1]
+  .text              ro code  0x0800b7a0    0x534  LevenbergMarquardt.o [1]
+  .text              ro code  0x0800bcd4     0x96  Module.o [1]
+  .text              ro code  0x0800bd6c     0x5c  asinf.o [4]
+  .text              ro code  0x0800bdc8     0xa8  rand.o [3]
+  .text              ro code  0x0800be70    0x618  stm32f4xx_hal_uart.o [1]
+  .text              ro code  0x0800c488     0xc4  usart.o [1]
+  .text              ro code  0x0800c54c    0x10a  main.o [1]
+  .text              ro code  0x0800c658     0xa0  cmsis_os.o [1]
+  .text              ro code  0x0800c6f8     0x22  S32ToDbl.o [4]
+  .text              ro code  0x0800c71c    0x294  PwmIn.o [1]
+  .text              ro code  0x0800c9b0    0x184  Pid.o [1]
+  .text              ro code  0x0800cb34    0x300  W25Qxx.o [1]
+  .text              ro code  0x0800ce34    0x88c  tasks.o [1]
+  .text              ro code  0x0800d6c0     0x3a  ABImemset48.o [5]
+  .text              ro code  0x0800d6fa    0x28c  Matrix3.o [1]
+  .text              ro code  0x0800d988     0xb6  Quaternion.o [1]
+  .text              ro code  0x0800da40    0x9e0  Declination.o [1]
+  .text              ro code  0x0800e420     0x2e  DblCmpGe.o [4]
+  .text              ro code  0x0800e450     0xe2  DblSub.o [4]
+  .text              ro code  0x0800e534     0x3a  DblToS32.o [4]
+  .text              ro code  0x0800e570     0xa4  xatanf.o [4]
+  .text              ro code  0x0800e614     0x28  strncmp.o [3]
+  .text              ro code  0x0800e63c      0x6  ABImemclr.o [5]
+  .text              ro code  0x0800e642     0x10  Battery.o [1]
+  .text              ro code  0x0800e654     0x36  strlen.o [5]
+  .text              ro code  0x0800e68c     0x3a  FltToU64.o [4]
+  .text              ro code  0x0800e6c8     0xf8  WayPointControl.o [1]
+  .text              ro code  0x0800e7c0    0x1bc  MavlinkNotice.o [1]
+  .text              ro code  0x0800e97c    0x230  usbd_cdc.o [1]
+  .text              ro code  0x0800ebac     0x2e  DblCmpLe.o [4]
+  .text              ro code  0x0800ebdc    0x246  DblDiv.o [4]
+  .text              ro code  0x0800ee24    0x178  DblAdd.o [4]
+  .text              ro code  0x0800ef9c    0x320  Icm20689.o [1]
+  .text              ro code  0x0800f2bc    0x1dc  Ak8975.o [1]
+  .text              ro code  0x0800f498    0x5bc  Spl06.o [1]
+  .text              ro code  0x0800fa54    0x440  Rotation.o [1]
+  .text              ro code  0x0800fe94      0xc  stm32f4xx_hal.o [1]
+  .text              ro code  0x0800fea0     0x24  stm32f4xx_hal_dma.o [1]
+  .text              ro code  0x0800fec4      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code  0x0800fec6      0x2  stm32f4xx_hal_uart.o [1]
+  .text              ro code  0x0800fec8    0x1e4  stm32f4xx_hal_rcc.o [1]
+  .text              ro code  0x080100ac    0x1e8  stm32f4xx_hal_gpio.o [1]
+  .text              ro code  0x08010294     0xdc  stm32f4xx_hal_cortex.o [1]
+  .text              ro code  0x08010370     0x34  stm32f4xx_hal.o [1]
+  .text              ro code  0x080103a4    0x130  gpio.o [1]
+  .text              ro code  0x080104d4    0x140  spi.o [1]
+  .text              ro code  0x08010614    0x58c  tim.o [1]
+  .text              ro code  0x08010ba0    0x114  adc.o [1]
+  .text              ro code  0x08010cb4     0x78  freertos.o [1]
+  .text              ro code  0x08010d2c    0x2fc  stm32f4xx_hal_rcc.o [1]
+  .text              ro code  0x08011028     0x10  stm32f4xx_hal.o [1]
+  .text              ro code  0x08011038    0x5f4  queue.o [1]
+  .text              ro code  0x0801162c    0x200  port.o [1]
+  .text              ro code  0x0801182c    0x714  stm32f4xx_hal_tim.o [1]
+  .text              ro code  0x08011f40    0x656  stm32f4xx_hal_spi.o [1]
+  .text              ro code  0x08012596     0x90  list.o [1]
+  .text              ro code  0x08012628    0x374  timers.o [1]
+  .text              ro code  0x0801299c     0x3c  floorf.o [4]
+  .text              ro code  0x080129d8     0x5e  ABImemset.o [5]
+  .text              ro code  0x08012a38    0x2b0  usbd_conf.o [1]
+  .text              ro code  0x08012ce8      0x4  heaptramp0.o [3]
+  .text              ro code  0x08012cec     0x60  usbd_ioreq.o [1]
+  .text              ro code  0x08012d4c     0x28  stm32f4xx_hal.o [1]
+  .text              ro code  0x08012d74     0x16  math_wrappers64.o [4]
+  .text              ro code  0x08012d8c     0x80  stm32f4xx_hal_timebase_TIM.o [1]
+  .text              ro code  0x08012e0c    0x22e  I64DivMod.o [5]
+  .text              ro code  0x0801303c     0x94  stm32f4xx_hal_msp.o [1]
+  .text              ro code  0x080130d0     0xa8  stm32f4xx_hal_tim_ex.o [1]
+  .text              ro code  0x08013178    0x29c  stm32f4xx_hal_adc.o [1]
+  .text              ro code  0x08013414    0x1a4  stm32f4xx_hal_adc_ex.o [1]
+  .text              ro code  0x080135b8     0x38  usb_device.o [1]
+  .text              ro code  0x080135f0     0xbc  MessageQueue.o [1]
+  .text              ro code  0x080136ac    0x160  ModuleTask.o [1]
+  .text              ro code  0x0801380c    0x198  SensorTask.o [1]
+  .text              ro code  0x080139a4    0x120  NavigationTask.o [1]
+  .text              ro code  0x08013ac4     0xc0  ControlTask.o [1]
+  .text              ro code  0x08013b84     0xb8  MessageTask.o [1]
+  CODE               ro code  0x08013c3c     0xa8  portasm.o [1]
+  .text              ro code  0x08013ce4      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code  0x08013ce6      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code  0x08013ce8      0x2  stm32f4xx_hal_tim_ex.o [1]
+  .text              ro code  0x08013cea      0x2  stm32f4xx_hal_tim.o [1]
+  .text              ro code  0x08013cec      0x2  stm32f4xx_hal_tim_ex.o [1]
+  .text              ro code  0x08013cee    0x24c  usbd_core.o [1]
+  .text              ro code  0x08013f3c    0x826  stm32f4xx_hal_pcd.o [1]
+  .text              ro code  0x08014762     0x50  stm32f4xx_hal_pcd_ex.o [1]
+  .rodata            const    0x080147b4     0x1c  NavigationTask.o [1]
+  .text              ro code  0x080147d0    0xb28  pow64.o [4]
+  .text              ro code  0x080152f8      0x2  I64DivZer.o [5]
+  .text              ro code  0x080152fc     0xb8  SafeControl.o [1]
+  .text              ro code  0x080153b4    0x620  UserControl.o [1]
+  .text              ro code  0x080159d4    0x4f8  MissionControl.o [1]
+  .text              ro code  0x08015ecc    0x5e0  MavlinkDecode.o [1]
+  .text              ro code  0x080164ac    0x258  bsklinkDecode.o [1]
+  .text              ro code  0x08016704    0x40e  usbd_ctlreq.o [1]
+  .text              ro code  0x08016b14    0x930  stm32f4xx_ll_usb.o [1]
+  .text              ro code  0x08017444     0x20  DblCmpEq.o [4]
+  .text              ro code  0x08017464     0x70  frexp.o [4]
+  .text              ro code  0x080174d4    0x418  iar_Exp64.o [4]
+  .text              ro code  0x080178ec    0x13a  ldexp.o [4]
+  .rodata            const    0x08017a28    0xd5c  MavlinkParam.o [1]
+  .rodata            const    0x08018784    0x618  MavlinkNotice.o [1]
+  .text              ro code  0x08018d9c     0xb8  usbd_desc.o [1]
+  .text              ro code  0x08018e54     0x60  system_stm32f4xx.o [1]
+  .text              ro code  0x08018eb4     0x54  stm32f4xx_it.o [1]
+  .text              ro code  0x08018f08     0x40  zero_init3.o [5]
+  .text              ro code  0x08018f48     0x28  data_init.o [5]
+  .text              ro code  0x08018f70     0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x08018f94     0x20  - Linker created -
+  .rodata            const    0x08018fb4     0x20  ModuleTask.o [1]
+  .text              ro code  0x08018fd4     0x1e  cmain.o [5]
+  .text              ro code  0x08018ff2      0x4  low_level_init.o [3]
+  .text              ro code  0x08018ff6      0x4  exit.o [3]
+  .text              ro code  0x08018ffc      0xa  cexit.o [5]
+  .rodata            const    0x08019008     0x1c  SensorTask.o [1]
+  .rodata            const    0x08019024     0x10  ControlTask.o [1]
+  .text              ro code  0x08019034     0x10  startup_stm32f407xx.o [1]
+  .rodata            const    0x08019044      0xc  freertos.o [1]
+  .text              ro code  0x08019050      0xc  cstartup_M.o [5]
+  .rodata            const    0x0801905c      0x8  MessageTask.o [1]
+  .rodata            const    0x08019064      0x8  system_stm32f4xx.o [1]
+  .text              ro code  0x0801906c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019070      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019074      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019078      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801907c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019080      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019084      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019088      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801908c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019090      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019094      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019098      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801909c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190a0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190a4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190a8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190ac      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190b0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190b4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190b8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190bc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190c0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190c4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190c8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190cc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190d0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190d4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190d8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190dc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190e0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190e4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190e8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190ec      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190f0      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190f4      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190f8      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x080190fc      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019100      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019104      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019108      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801910c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019110      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019114      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019118      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801911c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019120      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019124      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019128      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801912c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019130      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019134      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019138      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801913c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019140      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019144      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019148      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801914c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019150      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019154      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019158      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801915c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019160      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019164      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019168      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801916c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019170      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019174      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019178      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801917c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019180      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019184      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019188      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x0801918c      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019190      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019194      0x4  startup_stm32f407xx.o [1]
+  .text              ro code  0x08019198      0x4  startup_stm32f407xx.o [1]
+  .rodata            const    0x0801919c      0x0  zero_init3.o [5]
+  .rodata            const    0x0801919c      0x0  lz77_init_single.o [5]
+  Initializer bytes  const    0x0801919c    0x400  <for P2-1>
+                            - 0x0801959c  0x19414
+
+"P2", part 1 of 3:                          0x624
+  P2-1                        0x20000000    0x624  <Init block>
+    .data            inited   0x20000000     0x28  Barometer.o [1]
+    .data            inited   0x20000028     0x1c  Ahrs.o [1]
+    .data            inited   0x20000044     0x10  Ahrs.o [1]
+    .data            inited   0x20000054     0x1c  AhrsAux.o [1]
+    .data            inited   0x20000070      0xd  AhrsAux.o [1]
+    .data            inited   0x20000080     0x24  Kalman3.o [1]
+    .data            inited   0x200000a4    0x408  MavlinkParam.o [1]
+    .data            inited   0x200004ac      0xc  port.o [1]
+    .data            inited   0x200004b8      0xc  stm32f4xx_hal.o [1]
+    .data            inited   0x200004c4      0x4  system_stm32f4xx.o [1]
+    .data            inited   0x200004c8      0xc  usbd_cdc.o [1]
+    .data            inited   0x200004d4     0x38  usbd_cdc.o [1]
+    .data            inited   0x2000050c     0x44  usbd_cdc.o [1]
+    .data            inited   0x20000550     0x44  usbd_cdc.o [1]
+    .data            inited   0x20000594     0x44  usbd_cdc.o [1]
+    .data            inited   0x200005d8     0x10  usbd_cdc_if.o [1]
+    .data            inited   0x200005e8     0x1c  usbd_desc.o [1]
+    .data            inited   0x20000604     0x14  usbd_desc.o [1]
+    .data            inited   0x20000618      0x4  usbd_desc.o [1]
+    .data            inited   0x2000061c      0x8  rand.o [3]
+                            - 0x20000624    0x624
+
+"P2", part 2 of 3:                         0xbe8c
+  .bss               zero     0x20000624   0x3c18  heap_4.o [1]
+  .bss               zero     0x2000423c   0x27d8  WayPointControl.o [1]
+  .bss               zero     0x20006a14   0x1000  Parameter.o [1]
+  .bss               zero     0x20007a14   0x1000  usbd_cdc_if.o [1]
+  .bss               zero     0x20008a14    0x60c  MavlinkDecode.o [1]
+  .bss               zero     0x20009020    0x5fc  Message.o [1]
+  .bss               zero     0x2000961c    0x408  MavlinkParam.o [1]
+  .bss               zero     0x20009a24    0x400  Message.o [1]
+  .bss               zero     0x20009e24    0x3f0  usbd_conf.o [1]
+  .bss               zero     0x2000a214    0x314  Navigation.o [1]
+  .bss               zero     0x2000a528    0x224  usb_device.o [1]
+  .bss               zero     0x2000a74c    0x218  FlightControl.o [1]
+  .bss               zero     0x2000a964    0x200  usbd_desc.o [1]
+  .bss               zero     0x2000ab64    0x1d8  Ahrs.o [1]
+  .bss               zero     0x2000ad3c    0x1d8  dlmalloc.o [3]
+  .bss               zero     0x2000af14    0x16c  Ahrs.o [1]
+  .bss               zero     0x2000b080    0x16c  AhrsAux.o [1]
+  .bss               zero     0x2000b1ec    0x12c  tasks.o [1]
+  .bss               zero     0x2000b318    0x110  Ublox.o [1]
+  .bss               zero     0x2000b428    0x104  MavlinkParam.o [1]
+  .bss               zero     0x2000b52c    0x100  Message.o [1]
+  .bss               zero     0x2000b62c    0x100  Message.o [1]
+  .bss               zero     0x2000b72c     0xa0  tasks.o [1]
+  .bss               zero     0x2000b7cc     0x84  rand.o [3]
+  .bss               zero     0x2000b850     0x80  Accelerometer.o [1]
+  .bss               zero     0x2000b8d0     0x74  Accelerometer.o [1]
+  .bss               zero     0x2000b948     0x74  Magnetometer.o [1]
+  .bss               zero     0x2000b9bc     0x70  bsklinkDecode.o [1]
+  .bss               zero     0x2000ba2c     0x70  Message.o [1]
+  .bss               zero     0x2000ba9c     0x6c  Gyroscope.o [1]
+  .bss               zero     0x2000bb08     0x64  Message.o [1]
+  .bss               zero     0x2000bb6c     0x44  MissionControl.o [1]
+  .bss               zero     0x2000bbb0     0x58  Gps.o [1]
+  .bss               zero     0x2000bc08     0x58  spi.o [1]
+  .bss               zero     0x2000bc60     0x58  spi.o [1]
+  .bss               zero     0x2000bcb8     0x48  adc.o [1]
+  .bss               zero     0x2000bd00     0x48  AhrsAux.o [1]
+  .bss               zero     0x2000bd48     0x48  Ublox.o [1]
+  .bss               zero     0x2000bd90     0x40  Magnetometer.o [1]
+  .bss               zero     0x2000bdd0     0x40  queue.o [1]
+  .bss               zero     0x2000be10     0x40  usart.o [1]
+  .bss               zero     0x2000be50     0x3c  MavlinkSend.o [1]
+  .bss               zero     0x2000be8c     0x3c  stm32f4xx_hal_timebase_TIM.o [1]
+  .bss               zero     0x2000bec8     0x3c  tim.o [1]
+  .bss               zero     0x2000bf04     0x3c  tim.o [1]
+  .bss               zero     0x2000bf40     0x3c  tim.o [1]
+  .bss               zero     0x2000bf7c     0x3c  tim.o [1]
+  .bss               zero     0x2000bfb8     0x3c  tim.o [1]
+  .bss               zero     0x2000bff4     0x3c  timers.o [1]
+  .bss               zero     0x2000c030     0x38  FlightStatus.o [1]
+  .bss               zero     0x2000c068     0x38  PwmIn.o [1]
+  .bss               zero     0x2000c0a0     0x34  MavlinkSend.o [1]
+  .bss               zero     0x2000c0d4     0x34  Message.o [1]
+  .bss               zero     0x2000c108     0x34  Rc.o [1]
+  .bss               zero     0x2000c13c     0x30  MavlinkSend.o [1]
+  .bss               zero     0x2000c16c     0x30  Rc.o [1]
+  .bss               zero     0x2000c19c     0x24  Motor.o [1]
+  .bss               zero     0x2000c1c0     0x30  Sensor.o [1]
+  .bss               zero     0x2000c1f0     0x30  Spl06.o [1]
+  .bss               zero     0x2000c220     0x28  Ahrs.o [1]
+  .bss               zero     0x2000c248     0x28  UserControl.o [1]
+  .bss               zero     0x2000c270     0x24  Rc.o [1]
+  .bss               zero     0x2000c294     0x20  Sensor.o [1]
+  .bss               zero     0x2000c2b4     0x20  UserControl.o [1]
+  .bss               zero     0x2000c2d4     0x1c  Spl06.o [1]
+  .bss               zero     0x2000c2f0     0x1c  Navigation.o [1]
+  .bss               zero     0x2000c30c     0x18  FaultDetect.o [1]
+  .bss               zero     0x2000c324     0x18  FlightControl.o [1]
+  .bss               zero     0x2000c33c      0xc  FlightControl.o [1]
+  .bss               zero     0x2000c348     0x18  FlightControl.o [1]
+  .bss               zero     0x2000c360     0x18  MessageQueue.o [1]
+  .bss               zero     0x2000c378     0x18  Ublox.o [1]
+  .bss               zero     0x2000c390     0x18  dlmalloc.o [3]
+  .bss               zero     0x2000c3a8     0x14  Navigation.o [1]
+  .bss               zero     0x2000c3bc     0x10  Accelerometer.o [1]
+  .bss               zero     0x2000c3cc     0x10  FaultDetect.o [1]
+  .bss               zero     0x2000c3dc     0x10  Gyroscope.o [1]
+  .bss               zero     0x2000c3ec     0x10  Icm20689.o [1]
+  .bss               zero     0x2000c3fc     0x10  W25Qxx.o [1]
+  .bss               zero     0x2000c40c      0xc  Gps.o [1]
+  .bss               zero     0x2000c418      0xc  FlightControl.o [1]
+  .bss               zero     0x2000c424      0xc  Navigation.o [1]
+  .bss               zero     0x2000c430      0xc  Rc.o [1]
+  .bss               zero     0x2000c43c      0x4  ControlTask.o [1]
+  .bss               zero     0x2000c440      0x8  Ahrs.o [1]
+  .bss               zero     0x2000c448      0x8  Ak8975.o [1]
+  .bss               zero     0x2000c450      0x8  LevenbergMarquardt.o [1]
+  .bss               zero     0x2000c458      0x8  NavigationTask.o [1]
+  .bss               zero     0x2000c460      0x8  Rc.o [1]
+  .bss               zero     0x2000c468      0x8  SensorTask.o [1]
+  .bss               zero     0x2000c470      0x4  ControlTask.o [1]
+  .bss               zero     0x2000c474      0x4  FlightControl.o [1]
+  .bss               zero     0x2000c478      0x4  freertos.o [1]
+  .bss               zero     0x2000c47c      0x4  MavlinkParam.o [1]
+  .bss               zero     0x2000c480      0x4  MavlinkSend.o [1]
+  .bss               zero     0x2000c484      0x4  Message.o [1]
+  .bss               zero     0x2000c488      0x4  MessageTask.o [1]
+  .bss               zero     0x2000c48c      0x4  ModuleTask.o [1]
+  .bss               zero     0x2000c490      0x4  Parameter.o [1]
+  .bss               zero     0x2000c494      0x4  SafeControl.o [1]
+  .bss               zero     0x2000c498      0x4  WayPointControl.o [1]
+  .bss               zero     0x2000c49c      0x4  xgetmemchunk.o [3]
+  .bss               zero     0x2000c4a0      0x2  MavlinkSend.o [1]
+  .bss               zero     0x2000c4a2      0x2  ModuleTask.o [1]
+  .bss               zero     0x2000c4a4      0x2  SensorTask.o [1]
+  .bss               zero     0x2000c4a6      0x2  WayPointControl.o [1]
+  .bss               zero     0x2000c4a8      0x2  WayPointControl.o [1]
+  .bss               zero     0x2000c4aa      0x2  WayPointControl.o [1]
+  .bss               zero     0x2000c4ac      0x1  bsklinkSend.o [1]
+  .bss               zero     0x2000c4ad      0x1  Sensor.o [1]
+  .bss               zero     0x2000c4ae      0x1  usbd_cdc.o [1]
+  .bss               zero     0x2000c4af      0x1  usbd_ctlreq.o [1]
+                            - 0x2000c4b0   0xbe8c
+
+"P2", part 3 of 3:                         0x1b00
+  CSTACK                      0x2000c4b0   0x1500  <Block>
+    CSTACK           uninit   0x2000c4b0   0x1500  <Block tail>
+  HEAP                        0x2000d9b0    0x600  <Block>
+    HEAP             uninit   0x2000d9b0    0x600  <Block tail>
+                            - 0x2000dfb0   0x1b00
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xbe8c:
+          0x20000624  0xbe8c
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x400 (65% of destination):
+          0x0801919c   0x400
+    1 destination range, total size 0x624:
+          0x20000000   0x624
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                        ro code  ro data  rw data
+    ------                        -------  -------  -------
+G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj: [1]
+    Accelerometer.o                 2 560               260
+    Ahrs.o                          3 564       28      928
+    AhrsAux.o                       1 328       27      477
+    Ak8975.o                          476                 8
+    Barometer.o                       360       26       40
+    Battery.o                          16
+    Board.o                            56
+    ControlTask.o                     192       16        8
+    Declination.o                   2 528
+    FaultDetect.o                      56                40
+    FlightControl.o                 3 556               612
+    FlightStatus.o                    920                56
+    Gps.o                           1 112               100
+    Gyroscope.o                     1 012               124
+    Icm20689.o                        800                16
+    Kalman3.o                         712       25       36
+    LevenbergMarquardt.o            1 332                 8
+    LowPassFilter.o                   270
+    Magnetometer.o                  2 188               180
+    MathTool.o                        380
+    Matrix3.o                         652
+    MavlinkDecode.o                 1 504             1 548
+    MavlinkNotice.o                   444    1 560
+    MavlinkParam.o                  2 600    4 093    2 328
+    MavlinkSend.o                   3 596               166
+    Message.o                       1 792             3 336
+    MessageQueue.o                    188                24
+    MessageTask.o                     184        8        4
+    MissionControl.o                1 272                68
+    Module.o                          150
+    ModuleTask.o                      352       32        6
+    Motor.o                           680                36
+    Navigation.o                    2 500               848
+    NavigationTask.o                  288       28        8
+    Parameter.o                       188             4 100
+    Pid.o                             388
+    PwmIn.o                           660                56
+    Quaternion.o                      182
+    Rc.o                            1 788               156
+    Rotation.o                      1 088
+    SafeControl.o                     184                 4
+    Sensor.o                        1 120                81
+    SensorTask.o                      408       28       10
+    Spl06.o                         1 468                76
+    Ublox.o                         1 980               368
+    UserControl.o                   1 568                72
+    Vector3.o                         772
+    W25Qxx.o                          768                16
+    WayPointControl.o                 248            10 210
+    adc.o                             276                72
+    bsklink.o                         294
+    bsklinkDecode.o                   600               112
+    bsklinkSend.o                   3 674                 1
+    cmsis_os.o                        160
+    freertos.o                        120       12        4
+    gpio.o                            304
+    heap_4.o                          452            15 384
+    list.o                            144
+    main.o                            266
+    port.o                            512        7       12
+    portasm.o                         168
+    queue.o                         1 524                64
+    spi.o                             320               176
+    startup_stm32f407xx.o             712
+    stm32f4xx_hal.o                   120        8       12
+    stm32f4xx_hal_adc.o               668
+    stm32f4xx_hal_adc_ex.o            420
+    stm32f4xx_hal_cortex.o            220
+    stm32f4xx_hal_dma.o                36
+    stm32f4xx_hal_gpio.o              488
+    stm32f4xx_hal_msp.o               148
+    stm32f4xx_hal_pcd.o             2 086
+    stm32f4xx_hal_pcd_ex.o             80
+    stm32f4xx_hal_rcc.o             1 248
+    stm32f4xx_hal_spi.o             1 622
+    stm32f4xx_hal_tim.o             1 818
+    stm32f4xx_hal_tim_ex.o            172
+    stm32f4xx_hal_timebase_TIM.o      128                60
+    stm32f4xx_hal_uart.o            1 564
+    stm32f4xx_it.o                     84
+    stm32f4xx_ll_usb.o              2 352
+    system_stm32f4xx.o                 96       11        4
+    tasks.o                         2 188               460
+    tim.o                           1 420               300
+    timers.o                          884                60
+    usart.o                           196                64
+    usb_device.o                       56               548
+    usbd_cdc.o                        560      177      273
+    usbd_cdc_if.o                     112       10    4 112
+    usbd_conf.o                       688             1 008
+    usbd_core.o                       588
+    usbd_ctlreq.o                   1 038                 1
+    usbd_desc.o                       184       34      564
+    usbd_ioreq.o                       96
+    -------------------------------------------------------
+    Total:                         83 316    6 130   49 705
+
+command line: [2]
+    -------------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    abort.o                             6
+    dlmalloc.o                      5 332               496
+    exit.o                              4
+    heaptramp0.o                        4
+    low_level_init.o                    4
+    rand.o                            168        6      140
+    strncmp.o                          40
+    xgetmemchunk.o                     44                 4
+    -------------------------------------------------------
+    Total:                          5 602        6      640
+
+m7M_tls.a: [4]
+    DblAdd.o                          376
+    DblCmpEq.o                         32
+    DblCmpGe.o                         46
+    DblCmpLe.o                         46
+    DblDiv.o                          582
+    DblMul.o                          418
+    DblSub.o                          226
+    DblToFlt.o                        104
+    DblToS32.o                         58
+    FltToDbl.o                         72
+    FltToU64.o                         58
+    S32ToDbl.o                         34
+    U64ToDbl.o                         70
+    asinf.o                            92
+    atan2f.o                          106
+    cos_sin32.o                       480
+    floorf.o                           60
+    fpinit_M.o                         34
+    frexp.o                           112
+    iar_Exp64.o                     1 048
+    ldexp.o                           314
+    math_wrappers64.o                  22
+    pow64.o                         2 856
+    sqrtf.o                            30
+    xatanf.o                          164
+    -------------------------------------------------------
+    Total:                          7 440
+
+rt7M_tl.a: [5]
+    ABImemclr.o                         6
+    ABImemclr4.o                        6
+    ABImemcpy.o                       166
+    ABImemset.o                        94
+    ABImemset48.o                      58
+    I64DivMod.o                       558
+    I64DivZer.o                         2
+    cexit.o                            10
+    cmain.o                            30
+    cstartup_M.o                       12
+    data_init.o                        40
+    lz77_init_single.o                122
+    strlen.o                           54
+    zero_init3.o                       64
+    -------------------------------------------------------
+    Total:                          1 222
+
+shb_l.a: [6]
+    exit.o                             20
+    -------------------------------------------------------
+    Total:                             20
+
+    Gaps                               60        8        7
+    Linker created                              32    6 912
+-----------------------------------------------------------
+    Grand Total:                   97 660    6 176   57 264
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x08018f94           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08018fb4           --   Gb  - Linker created -
+?main                   0x08018fd5          Code  Gb  cmain.o [5]
+ADC_Init                0x0801330b    0xf4  Code  Lc  stm32f4xx_hal_adc.o [1]
+AHBPrescTable           0x08018ea4    0x10  Data  Gb  system_stm32f4xx.o [1]
+AHRSAuxInit             0x08008ca5    0x94  Code  Gb  AhrsAux.o [1]
+AHRSInit                0x08002579   0x120  Code  Gb  Ahrs.o [1]
+APBPrescTable           0x08019064     0x8  Data  Gb  system_stm32f4xx.o [1]
+AccCalibrateEnable      0x08005767     0xa  Code  Gb  Accelerometer.o [1]
+AccCalibration          0x08005135   0x456  Code  Gb  Accelerometer.o [1]
+AccCalibration::caliCnt
+                        0x2000b940     0x4  Data  Lc  Accelerometer.o [1]
+AccCalibration::caliFlag
+                        0x2000b8f1     0x1  Data  Lc  Accelerometer.o [1]
+AccCalibration::currentOrientation
+                        0x2000b8f0     0x1  Data  Lc  Accelerometer.o [1]
+AccCalibration::new_offset
+                        0x2000b8d0     0xc  Data  Lc  Accelerometer.o [1]
+AccCalibration::new_scale
+                        0x2000b8dc     0xc  Data  Lc  Accelerometer.o [1]
+AccCalibration::orientationCaliFlag
+                        0x2000b8e8     0x8  Data  Lc  Accelerometer.o [1]
+AccCalibration::samples
+                        0x2000b8f4    0x48  Data  Lc  Accelerometer.o [1]
+AccCalibration::samples_count
+                        0x2000b93c     0x2  Data  Lc  Accelerometer.o [1]
+AccDataPreTreat         0x08005055    0xc4  Code  Gb  Accelerometer.o [1]
+AccDataPreTreat::lastAccMag
+                        0x2000b8cc     0x4  Data  Lc  Accelerometer.o [1]
+AccGetData              0x0800579d     0x4  Code  Gb  Accelerometer.o [1]
+AccLpfGetData           0x080057a1     0x4  Code  Gb  Accelerometer.o [1]
+AccPreTreatInit         0x08004dcd   0x288  Code  Gb  Accelerometer.o [1]
+AccSensorRead           0x0800bd31     0xe  Code  Gb  Module.o [1]
+AccVectorToRollPitchAngle
+                        0x08008a49    0x4e  Code  Gb  Vector3.o [1]
+AltControl              0x08015899   0x11a  Code  Lc  UserControl.o [1]
+AltControl::altHoldChanged
+                        0x2000c2c1     0x1  Data  Lc  UserControl.o [1]
+AltControl::lastTimeAltChanged
+                        0x2000c2cc     0x4  Data  Lc  UserControl.o [1]
+AltControl::velCtlTarget
+                        0x2000c2d0     0x4  Data  Lc  UserControl.o [1]
+AltCovarianceSelfAdaptation
+                        0x080037e5   0x150  Code  Gb  Navigation.o [1]
+AltCovarianceSelfAdaptation::accelLpf
+                        0x2000c424     0xc  Data  Lc  Navigation.o [1]
+AltitudeInnerControl::velLpf
+                        0x2000c420     0x4  Data  Lc  FlightControl.o [1]
+AltitudeOuterControl    0x08007a21    0x6a  Code  Gb  FlightControl.o [1]
+AltitudeOuterControl::altLpf
+                        0x2000c474     0x4  Data  Lc  FlightControl.o [1]
+ApplyDeadbandFloat      0x08006275    0x3e  Code  Gb  MathTool.o [1]
+ApplyDeadbandInt        0x08006259    0x1c  Code  Gb  MathTool.o [1]
+AttCovarianceSelfAdaptation
+                        0x08002e15    0x94  Code  Gb  Ahrs.o [1]
+AttitudeAuxEstimate     0x08008e59   0x12a  Code  Gb  AhrsAux.o [1]
+AttitudeAuxEstimate::previousT
+                        0x2000bd40     0x8  Data  Lc  AhrsAux.o [1]
+AttitudeAuxInitAlignment
+                        0x08008d39   0x118  Code  Gb  AhrsAux.o [1]
+AttitudeAuxInitAlignment::accSum
+                        0x20000054     0xc  Data  Lc  AhrsAux.o [1]
+AttitudeAuxInitAlignment::alignCnt
+                        0x2000006e     0x2  Data  Lc  AhrsAux.o [1]
+AttitudeAuxInitAlignment::alignFinishFlag
+                        0x2000006c     0x1  Data  Lc  AhrsAux.o [1]
+AttitudeAuxInitAlignment::magSum
+                        0x20000060     0xc  Data  Lc  AhrsAux.o [1]
+AttitudeEstimate        0x08002771   0x29a  Code  Gb  Ahrs.o [1]
+AttitudeEstimate::previousT
+                        0x2000c440     0x8  Data  Lc  Ahrs.o [1]
+AttitudeEstimateUpdate  0x08002a29   0x3ea  Code  Lc  Ahrs.o [1]
+AttitudeEstimateUpdate::count
+                        0x2000c244     0x4  Data  Lc  Ahrs.o [1]
+AttitudeEstimateUpdate::gError
+                        0x2000c220     0xc  Data  Lc  Ahrs.o [1]
+AttitudeEstimateUpdate::gyro_bias
+                        0x2000c238     0xc  Data  Lc  Ahrs.o [1]
+AttitudeEstimateUpdate::input
+                        0x2000c22c     0xc  Data  Lc  Ahrs.o [1]
+AttitudeInitAlignment   0x08002699    0xd0  Code  Gb  Ahrs.o [1]
+AttitudeInitAlignment::accSum
+                        0x20000028     0xc  Data  Lc  Ahrs.o [1]
+AttitudeInitAlignment::alignCnt
+                        0x20000042     0x2  Data  Lc  Ahrs.o [1]
+AttitudeInitAlignment::alignFinishFlag
+                        0x20000040     0x1  Data  Lc  Ahrs.o [1]
+AttitudeInitAlignment::magSum
+                        0x20000034     0xc  Data  Lc  Ahrs.o [1]
+AttitudeInnerControl    0x08007579   0x140  Code  Lc  FlightControl.o [1]
+AttitudeInnerControl::attInnerTargetLpf
+                        0x2000c330     0xc  Data  Lc  FlightControl.o [1]
+AttitudeInnerControl::rateControlOutput
+                        0x2000c324     0xc  Data  Lc  FlightControl.o [1]
+AttitudeOuterControl    0x0800780d   0x200  Code  Gb  FlightControl.o [1]
+AutoControl             0x08015481   0x356  Code  Lc  UserControl.o [1]
+AutoControl::brakeFilter
+                        0x2000c26c     0x4  Data  Lc  UserControl.o [1]
+AutoControl::lastTimePosBrake
+                        0x2000c268     0x4  Data  Lc  UserControl.o [1]
+AutoControl::lastTimePosChanged
+                        0x2000c264     0x4  Data  Lc  UserControl.o [1]
+AutoControl::lastVelCtlTarget
+                        0x2000c258     0xc  Data  Lc  UserControl.o [1]
+AutoControl::posHoldChanged
+                        0x2000c254     0x1  Data  Lc  UserControl.o [1]
+AutoControl::velCtlTarget
+                        0x2000c248     0xc  Data  Lc  UserControl.o [1]
+AutoLand                0x08015a75    0x9a  Code  Gb  MissionControl.o [1]
+AutoLand::velCtlTarget  0x2000bb9c     0x4  Data  Lc  MissionControl.o [1]
+BaroDataPreTreat        0x08006059   0x140  Code  Gb  Barometer.o [1]
+BaroDataPreTreat::lastTime
+                        0x20000018     0x8  Data  Lc  Barometer.o [1]
+BaroDataPreTreat::offset_cnt
+                        0x20000000     0x2  Data  Lc  Barometer.o [1]
+BaroDetectCheck::cnt    0x20000020     0x4  Data  Lc  Barometer.o [1]
+BaroDetectCheck::lastBaroAlt
+                        0x20000024     0x4  Data  Lc  Barometer.o [1]
+BaroGetAlt              0x08006199     0x6  Code  Gb  Barometer.o [1]
+BaroGetTemp             0x0800619f     0x8  Code  Gb  Barometer.o [1]
+BaroGetVelocity         0x080061a7     0x8  Code  Gb  Barometer.o [1]
+BaroSensorInit          0x0800bd09    0x1a  Code  Gb  Module.o [1]
+BaroSensorRead          0x0800bd61     0x4  Code  Gb  Module.o [1]
+BaroSensorUpdate        0x0800bd5d     0x4  Code  Gb  Module.o [1]
+BaroTemperatureRead     0x0800bd65     0x4  Code  Gb  Module.o [1]
+BatteryCurrentUpdate    0x0800e645     0x2  Code  Gb  Battery.o [1]
+BatteryVoltageUpdate    0x0800e643     0x2  Code  Gb  Battery.o [1]
+BodyFrameToEarthFrame   0x08002ea9    0x4e  Code  Gb  Ahrs.o [1]
+BsklinkDecode           0x080164ad    0xcc  Code  Gb  bsklinkDecode.o [1]
+BsklinkDecode::msg      0x2000b9bc    0x70  Data  Lc  bsklinkDecode.o [1]
+BsklinkDecodeSetAttPid  0x0801657d    0xc0  Code  Lc  bsklinkDecode.o [1]
+BsklinkDecodeSetPosPid  0x0801663d    0xbe  Code  Lc  bsklinkDecode.o [1]
+BsklinkMsgCalculateSum  0x08003e19    0x30  Code  Gb  bsklink.o [1]
+BsklinkMsgFormat        0x08003e49    0x48  Code  Gb  bsklink.o [1]
+BsklinkParseChar        0x08003e95    0xaa  Code  Gb  bsklink.o [1]
+BsklinkSendAttAnalyse   0x08002295   0x250  Code  Gb  bsklinkSend.o [1]
+BsklinkSendEnable       0x08004381     0x4  Code  Gb  Message.o [1]
+BsklinkSendFlightData   0x0800171d   0x220  Code  Gb  bsklinkSend.o [1]
+BsklinkSendFlightStatus
+                        0x08001945    0x9e  Code  Gb  bsklinkSend.o [1]
+BsklinkSendGps          0x08001d51   0x128  Code  Gb  bsklinkSend.o [1]
+BsklinkSendHeartBeat    0x080024eb    0x8c  Code  Gb  bsklinkSend.o [1]
+BsklinkSendMotor        0x08001f93    0xbc  Code  Gb  bsklinkSend.o [1]
+BsklinkSendPidAck       0x0800220f    0x6e  Code  Gb  bsklinkSend.o [1]
+BsklinkSendPidAtt       0x08002057    0xbc  Code  Gb  bsklinkSend.o [1]
+BsklinkSendPidPos       0x08002113    0xba  Code  Gb  bsklinkSend.o [1]
+BsklinkSendRcData       0x08001e85   0x10e  Code  Gb  bsklinkSend.o [1]
+BsklinkSendSensor       0x080019e5   0x1ee  Code  Gb  bsklinkSend.o [1]
+BsklinkSendSensorCaliCmd
+                        0x08001ce1    0x70  Code  Gb  bsklinkSend.o [1]
+BsklinkSendSensorCaliData
+                        0x08001bdd   0x104  Code  Gb  bsklinkSend.o [1]
+BsklinkSetPidAck        0x08002285     0xa  Code  Gb  bsklinkSend.o [1]
+BusFault_Handler        0x08018ebb     0x2  Code  Gb  stm32f4xx_it.o [1]
+CDC_Control_FS          0x0800af0f     0x4  Code  Lc  usbd_cdc_if.o [1]
+CDC_DeInit_FS           0x0800af0b     0x4  Code  Lc  usbd_cdc_if.o [1]
+CDC_Init_FS             0x0800aeed    0x1e  Code  Lc  usbd_cdc_if.o [1]
+CDC_Receive_FS          0x0800af13    0x16  Code  Lc  usbd_cdc_if.o [1]
+CDC_Transmit_FS         0x0800af29    0x26  Code  Gb  usbd_cdc_if.o [1]
+CSTACK$$Base            0x2000c4b0           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000d9b0           --   Gb  - Linker created -
+ClearAllWaypointItem    0x0800e777    0x20  Code  Gb  WayPointControl.o [1]
+Compass_Get_Lookup_Value
+                        0x0800da41    0xdc  Code  Gb  Declination.o [1]
+ConstrainFloat          0x080061ff    0x3a  Code  Gb  MathTool.o [1]
+ConstrainInt16          0x08006239    0x10  Code  Gb  MathTool.o [1]
+ConstrainInt32          0x08006249    0x10  Code  Gb  MathTool.o [1]
+ControlTaskCreate       0x08013b3d    0x22  Code  Gb  ControlTask.o [1]
+DataSend                0x08004507     0x4  Code  Gb  Message.o [1]
+DebugMon_Handler        0x08018ebf     0x2  Code  Gb  stm32f4xx_it.o [1]
+Degrees                 0x080062c9     0x6  Code  Gb  MathTool.o [1]
+EarthFrameToBodyFrame   0x08002ef9    0x4c  Code  Gb  Ahrs.o [1]
+EscCalibrateEnable      0x0800743b    0x2c  Code  Gb  Motor.o [1]
+EulerAngleToDCM         0x0800886d    0xb6  Code  Gb  Vector3.o [1]
+EulerAngleToDCM_T       0x08008923    0xb4  Code  Gb  Vector3.o [1]
+EulerAngleToQuaternion  0x0800d989    0xb6  Code  Gb  Quaternion.o [1]
+FS_Desc                 0x200005e8    0x1c  Data  Gb  usbd_desc.o [1]
+FaultDetectGetErrorStatus
+                        0x0800af87     0x6  Code  Gb  FaultDetect.o [1]
+FaultDetectInit         0x0800af5d    0x16  Code  Gb  FaultDetect.o [1]
+FaultDetectResetError   0x0800af77     0x4  Code  Gb  FaultDetect.o [1]
+FaultDetectSetError     0x0800af73     0x4  Code  Gb  FaultDetect.o [1]
+FcGetPID                0x08007da1    0x16  Code  Gb  FlightControl.o [1]
+FcSetPID                0x08007db7    0x20  Code  Gb  FlightControl.o [1]
+Flash_PageRead          0x0800cc61    0x9e  Code  Gb  W25Qxx.o [1]
+Flash_SectorErase       0x0800cc1b    0x46  Code  Gb  W25Qxx.o [1]
+Flash_SectorsRead       0x0800cd61    0x22  Code  Gb  W25Qxx.o [1]
+Flash_SectorsWrite      0x0800cd83    0xa4  Code  Gb  W25Qxx.o [1]
+Flash_SendByte          0x0800cb35    0x24  Code  Lc  W25Qxx.o [1]
+Flash_WaitForEnd        0x0800ccff    0x62  Code  Lc  W25Qxx.o [1]
+Flash_WriteEnable       0x0800cbf9    0x22  Code  Lc  W25Qxx.o [1]
+FlightControlInit       0x08007505    0x2a  Code  Gb  FlightControl.o [1]
+FlightControlInnerLoop  0x080076c5   0x12c  Code  Gb  FlightControl.o [1]
+FlightControlInnerLoop::previousT
+                        0x2000c418     0x8  Data  Lc  FlightControl.o [1]
+FlightControlReset      0x08007d4d    0x54  Code  Gb  FlightControl.o [1]
+FlightStatusUpdate      0x08006f75   0x2c0  Code  Gb  Rc.o [1]
+FlightStatusUpdate::disArmedCheckTime
+                        0x2000c198     0x4  Data  Lc  Rc.o [1]
+FlightStatusUpdate::landCheckTime
+                        0x2000c170    0x28  Data  Lc  Rc.o [1]
+FlightStatusUpdate::landVibraFlag
+                        0x2000c16c     0x1  Data  Lc  Rc.o [1]
+GPSModuleInit           0x0800bd23     0x4  Code  Gb  Module.o [1]
+GaussEliminateSolveDelta
+                        0x0800bb05   0x1b4  Code  Lc  LevenbergMarquardt.o [1]
+GetAccHealthStatus      0x0800b3bd     0x6  Code  Gb  Sensor.o [1]
+GetAccMag               0x08005791     0x8  Code  Gb  Accelerometer.o [1]
+GetAccOffsetCaliData    0x0800577b     0x4  Code  Gb  Accelerometer.o [1]
+GetAccScaleCaliData     0x08005785     0x2  Code  Gb  Accelerometer.o [1]
+GetAltControlStatus     0x0800482f     0x6  Code  Gb  FlightStatus.o [1]
+GetAngleEstError        0x080031ad     0x4  Code  Gb  Ahrs.o [1]
+GetAngleMeasure         0x080031a9     0x4  Code  Gb  Ahrs.o [1]
+GetArmedStatus          0x08004781     0x6  Code  Gb  FlightStatus.o [1]
+GetAttInnerCtlTarget    0x08007d41     0x6  Code  Gb  FlightControl.o [1]
+GetAttOuterCtlError     0x08007d25     0x4  Code  Gb  FlightControl.o [1]
+GetAttOuterCtlTarget    0x08007d47     0x6  Code  Gb  FlightControl.o [1]
+GetBatteryCurrent       0x0800e64b     0x4  Code  Gb  Battery.o [1]
+GetBatteryStatus        0x0800e64f     0x4  Code  Gb  Battery.o [1]
+GetBatteryVoltage       0x0800e647     0x4  Code  Gb  Battery.o [1]
+GetCentripetalAccBf     0x080031a1     0x4  Code  Gb  Ahrs.o [1]
+GetCopterAccEf          0x0800318d     0x4  Code  Gb  Ahrs.o [1]
+GetCopterAccEfLpf       0x08003191     0x2  Code  Gb  Ahrs.o [1]
+GetCopterAccel          0x08003af1     0x4  Code  Gb  Navigation.o [1]
+GetCopterAngle          0x0800319d     0x4  Code  Gb  Ahrs.o [1]
+GetCopterPosMeasure     0x08003b11     0x4  Code  Gb  Navigation.o [1]
+GetCopterPosition       0x08003b05     0x4  Code  Gb  Navigation.o [1]
+GetCopterVelMeasure     0x08003b01     0x4  Code  Gb  Navigation.o [1]
+GetCopterVelocity       0x08003af9     0x2  Code  Gb  Navigation.o [1]
+GetDirectionOfTwoPoint  0x08009477    0x22  Code  Gb  Gps.o [1]
+GetDirectionToHome      0x08009499    0x42  Code  Gb  Gps.o [1]
+GetDistanceToHome       0x080094db    0x3c  Code  Gb  Gps.o [1]
+GetFailSafeStatus       0x080049a5     0xe  Code  Gb  FlightStatus.o [1]
+GetFlightMode           0x0800489b     0x6  Code  Gb  FlightStatus.o [1]
+GetFlightStatus         0x0800478d     0x6  Code  Gb  FlightStatus.o [1]
+GetGyroHealthStatus     0x0800b3b3     0x6  Code  Gb  Sensor.o [1]
+GetGyroOffsetCaliData   0x08004da5     0x4  Code  Gb  Gyroscope.o [1]
+GetHomeLatitudeAndLongitude
+                        0x080095d1    0x14  Code  Gb  Gps.o [1]
+GetHomePosition         0x08009519    0xb8  Code  Gb  Gps.o [1]
+GetImuOrientation       0x0800b3ad     0x6  Code  Gb  Sensor.o [1]
+GetInitStatus           0x08004847     0x6  Code  Gb  FlightStatus.o [1]
+GetLevelCalibraData     0x0800578d     0x4  Code  Gb  Accelerometer.o [1]
+GetMagDeclination       0x080095e5     0x8  Code  Gb  Gps.o [1]
+GetMagOffsetCaliData    0x08006019     0x2  Code  Gb  Magnetometer.o [1]
+GetMagScaleCaliData     0x08006021     0x4  Code  Gb  Magnetometer.o [1]
+GetMavNoticeValue       0x0800e7c1    0x14  Code  Gb  MavlinkNotice.o [1]
+GetMessageStatus        0x0800450b     0xe  Code  Gb  Message.o [1]
+GetMotorNum             0x0800747d     0x4  Code  Gb  Motor.o [1]
+GetMotorValue           0x08007467     0x4  Code  Gb  Motor.o [1]
+GetPlaceStatus          0x08004823     0x6  Code  Gb  FlightStatus.o [1]
+GetPosControlStatus     0x0800483b     0x6  Code  Gb  FlightStatus.o [1]
+GetPosInnerCtlError     0x08007d35     0x6  Code  Gb  FlightControl.o [1]
+GetRandom               0x08006339     0x4  Code  Gb  MathTool.o [1]
+GetRcCommad             0x08006d8b     0xa  Code  Gb  Rc.o [1]
+GetRcData               0x08006d81     0xa  Code  Gb  Rc.o [1]
+GetSportAccEf           0x080090f1     0x4  Code  Gb  AhrsAux.o [1]
+GetWaypointCount        0x0800e72b     0x6  Code  Gb  WayPointControl.o [1]
+GetWaypointItem         0x0800e797    0x12  Code  Gb  WayPointControl.o [1]
+GetWaypointRecvCount    0x0800e737     0x6  Code  Gb  WayPointControl.o [1]
+GetWaypointSendCount    0x0800e743     0x6  Code  Gb  WayPointControl.o [1]
+GetWindSpeed            0x0800498f     0x8  Code  Gb  FlightStatus.o [1]
+GetWindSpeedAcc         0x08004997     0x8  Code  Gb  FlightStatus.o [1]
+GpsCheckStatus::firstFix
+                        0x2000c40c     0x1  Data  Lc  Gps.o [1]
+GpsCheckStatus::gpsFixCnt
+                        0x2000c40e     0x2  Data  Lc  Gps.o [1]
+GpsDataPreTreat         0x080091d5   0x12c  Code  Gb  Gps.o [1]
+GpsDetectCheck::cnt     0x2000c410     0x4  Data  Lc  Gps.o [1]
+GpsDetectCheck::lastGpsTime
+                        0x2000c414     0x4  Data  Lc  Gps.o [1]
+GpsGetAccuracy          0x080095ff     0x8  Code  Gb  Gps.o [1]
+GpsGetFixStatus         0x080095f1     0xe  Code  Gb  Gps.o [1]
+GpsGetPosition          0x0800960b     0x2  Code  Gb  Gps.o [1]
+GpsGetVelocity          0x08009607     0x4  Code  Gb  Gps.o [1]
+GpsResetHomePosition    0x08009301    0x18  Code  Gb  Gps.o [1]
+GpsTransToLocalPosition
+                        0x08009319    0xbe  Code  Gb  Gps.o [1]
+GyroCalibrateEnable     0x08004d83     0xa  Code  Gb  Gyroscope.o [1]
+GyroCalibration         0x08004bed   0x196  Code  Gb  Gyroscope.o [1]
+GyroCalibration::count  0x2000c3de     0x2  Data  Lc  Gyroscope.o [1]
+GyroCalibration::gyro_sum
+                        0x2000c3e0     0xc  Data  Lc  Gyroscope.o [1]
+GyroCalibration::staticFlag
+                        0x2000c3dc     0x1  Data  Lc  Gyroscope.o [1]
+GyroDataPreTreat        0x08004ae7   0x104  Code  Gb  Gyroscope.o [1]
+GyroDetectCheck::cnt    0x2000bb04     0x4  Data  Lc  Gyroscope.o [1]
+GyroDetectCheck::lastGyroRaw
+                        0x2000baf8     0xc  Data  Lc  Gyroscope.o [1]
+GyroGetData             0x08004d8d     0x4  Code  Gb  Gyroscope.o [1]
+GyroGetTemp             0x08004d9d     0x8  Code  Gb  Gyroscope.o [1]
+GyroLpfGetData          0x08004d91     0x2  Code  Gb  Gyroscope.o [1]
+GyroPreTreatInit        0x080049d9   0x10e  Code  Gb  Gyroscope.o [1]
+GyroSensorInit          0x0800bcd5    0x1a  Code  Gb  Module.o [1]
+GyroSensorRead          0x0800bd27     0xa  Code  Gb  Module.o [1]
+HAL_ADCEx_InjectedConfigChannel
+                        0x08013415   0x198  Code  Gb  stm32f4xx_hal_adc_ex.o [1]
+HAL_ADC_ConfigChannel   0x080131c9   0x142  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_Init            0x08013179    0x50  Code  Gb  stm32f4xx_hal_adc.o [1]
+HAL_ADC_MspInit         0x08010c3b    0x3e  Code  Gb  adc.o [1]
+HAL_DMA_Abort_IT        0x0800fea1    0x24  Code  Gb  stm32f4xx_hal_dma.o [1]
+HAL_Delay               0x08012d4d    0x28  Code  Wk  stm32f4xx_hal.o [1]
+HAL_GPIO_Init           0x080100ad   0x1ae  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x0801025b     0xc  Code  Gb  stm32f4xx_hal_gpio.o [1]
+HAL_GetTick             0x0800fe95     0xc  Code  Wk  stm32f4xx_hal.o [1]
+HAL_IncTick             0x08011029    0x10  Code  Wk  stm32f4xx_hal.o [1]
+HAL_Init                0x08010371    0x30  Code  Gb  stm32f4xx_hal.o [1]
+HAL_InitTick            0x08012d8d    0x70  Code  Gb  stm32f4xx_hal_timebase_TIM.o [1]
+HAL_MspInit             0x0801303d    0x94  Code  Gb  stm32f4xx_hal_msp.o [1]
+HAL_NVIC_EnableIRQ      0x08010301     0xa  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority    0x080102af    0x52  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                        0x08010295    0x1a  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_PCDEx_SetRxFiFo     0x080147ab     0x8  Code  Gb  stm32f4xx_hal_pcd_ex.o [1]
+HAL_PCDEx_SetTxFiFo     0x08014763    0x48  Code  Gb  stm32f4xx_hal_pcd_ex.o [1]
+HAL_PCD_ConnectCallback
+                        0x08012b33     0x8  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DataInStageCallback
+                        0x08012ab7    0x12  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DataOutStageCallback
+                        0x08012aa3    0x14  Code  Gb  usbd_conf.o [1]
+HAL_PCD_DisconnectCallback
+                        0x08012b3b     0x8  Code  Gb  usbd_conf.o [1]
+HAL_PCD_EP_Close        0x0801455d    0x40  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_ClrStall     0x08014687    0x4e  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_GetRxCount   0x080145cb    0x14  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Open         0x08014507    0x56  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Receive      0x0801459d    0x2e  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_SetStall     0x08014625    0x5a  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_EP_Transmit     0x080145df    0x2c  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_IRQHandler      0x08014011   0x484  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_ISOINIncompleteCallback
+                        0x08012b2b     0x8  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ISOOUTIncompleteCallback
+                        0x08012b23     0x8  Code  Gb  usbd_conf.o [1]
+HAL_PCD_Init            0x08013f3d    0xb0  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_MspInit         0x08012a39    0x5e  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResetCallback   0x08012ad1    0x20  Code  Gb  usbd_conf.o [1]
+HAL_PCD_ResumeCallback  0x08012b1b     0x8  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SOFCallback     0x08012ac9     0x8  Code  Gb  usbd_conf.o [1]
+HAL_PCD_SetAddress      0x080144e9    0x1e  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_SetupStageCallback
+                        0x08012a97     0xc  Code  Gb  usbd_conf.o [1]
+HAL_PCD_Start           0x08013fed    0x24  Code  Gb  stm32f4xx_hal_pcd.o [1]
+HAL_PCD_SuspendCallback
+                        0x08012af1    0x2a  Code  Gb  usbd_conf.o [1]
+HAL_RCC_ClockConfig     0x0800fec9   0x110  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetClockConfig  0x08010003    0x38  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x0800ffd9     0x6  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq    0x0800ffdf    0x10  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq    0x0800ffef     0xe  Code  Gb  stm32f4xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x08010d2d   0x2fc  Code  Wk  stm32f4xx_hal_rcc.o [1]
+HAL_SPI_Init            0x08011f41    0x7e  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_MspInit         0x08010557    0x7e  Code  Gb  spi.o [1]
+HAL_SPI_Receive         0x08012197   0x13c  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_Transmit        0x08011fbf   0x1d8  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SPI_TransmitReceive
+                        0x080122d3   0x232  Code  Gb  stm32f4xx_hal_spi.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                        0x08010337    0x1a  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_SYSTICK_Config      0x08010315    0x22  Code  Gb  stm32f4xx_hal_cortex.o [1]
+HAL_TIM3_Callback       0x0800c779    0xf0  Code  Gb  PwmIn.o [1]
+HAL_TIM3_Callback::temp_cnt1
+                        0x2000c090     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIM3_Callback::temp_cnt2
+                        0x2000c092     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIM3_Callback::temp_cnt3
+                        0x2000c094     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIM3_Callback::temp_cnt4
+                        0x2000c096     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIM4_Callback       0x0800c869    0xf0  Code  Gb  PwmIn.o [1]
+HAL_TIM4_Callback::temp_cnt1
+                        0x2000c098     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIM4_Callback::temp_cnt2
+                        0x2000c09a     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIM4_Callback::temp_cnt3
+                        0x2000c09c     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIM4_Callback::temp_cnt4
+                        0x2000c09e     0x2  Data  Lc  PwmIn.o [1]
+HAL_TIMEx_BreakCallback
+                        0x08013ce9     0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIMEx_CommutationCallback
+                        0x08013ced     0x2  Code  Wk  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIMEx_ConfigBreakDeadTime
+                        0x0801311d    0x5c  Code  Gb  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIMEx_MasterConfigSynchronization
+                        0x080130d1    0x4c  Code  Gb  stm32f4xx_hal_tim_ex.o [1]
+HAL_TIM_Base_Init       0x0801182d    0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_Base_Start_IT   0x0801184b    0x16  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_CaptureCallback
+                        0x0800c963    0x2e  Code  Gb  PwmIn.o [1]
+HAL_TIM_IC_ConfigChannel
+                        0x08011a55   0x118  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_Init         0x08011893    0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IC_MspInit      0x08010a25    0xae  Code  Gb  tim.o [1]
+HAL_TIM_IC_Start_IT     0x080118b1    0x3a  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_IRQHandler      0x0801190b   0x14a  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_MspPostInit     0x08010ad3    0x6a  Code  Gb  tim.o [1]
+HAL_TIM_PWM_ConfigChannel
+                        0x08011b6d    0xd0  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_Init        0x08011875    0x1e  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_TIM_PWM_MspInit     0x080109b1    0x74  Code  Gb  tim.o [1]
+HAL_TIM_PeriodElapsedCallback
+                        0x0800c635     0xe  Code  Gb  main.o [1]
+HAL_TIM_ReadCapturedValue
+                        0x08011c47    0x44  Code  Gb  stm32f4xx_hal_tim.o [1]
+HAL_UART_IRQHandler     0x0800c02b   0x158  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_Init           0x0800be71    0x44  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_MspInit        0x0800c4bd    0x58  Code  Gb  usart.o [1]
+HAL_UART_Receive_IT     0x0800bfd1    0x46  Code  Gb  stm32f4xx_hal_uart.o [1]
+HAL_UART_RxCpltCallback
+                        0x0800633d    0x2a  Code  Gb  Ublox.o [1]
+HAL_UART_Transmit       0x0800becf    0xfc  Code  Gb  stm32f4xx_hal_uart.o [1]
+HEAP$$Base              0x2000d9b0           --   Gb  - Linker created -
+HEAP$$Limit             0x2000dfb0           --   Gb  - Linker created -
+HardFault_Handler       0x08018eb7     0x2  Code  Gb  stm32f4xx_it.o [1]
+I                       0x20000080    0x24  Data  Gb  Kalman3.o [1]
+ImuLevelCalibration     0x08005599   0x1ce  Code  Gb  Accelerometer.o [1]
+ImuLevelCalibration::acc_sum
+                        0x2000c3c0     0xc  Data  Lc  Accelerometer.o [1]
+ImuLevelCalibration::count
+                        0x2000c3bc     0x2  Data  Lc  Accelerometer.o [1]
+ImuOrientationDetect    0x0800b24d   0x160  Code  Gb  Sensor.o [1]
+ImuTempControl          0x0800b149    0xfa  Code  Gb  Sensor.o [1]
+ImuTempControl::cnt     0x2000c1c2     0x2  Data  Lc  Sensor.o [1]
+ImuTempControl::lastTime
+                        0x2000c1c8     0x8  Data  Lc  Sensor.o [1]
+ImuTempControl::overPreHeatFLag
+                        0x2000c1c0     0x1  Data  Lc  Sensor.o [1]
+ImuTempControlInit      0x0800af95    0x1c  Code  Gb  Sensor.o [1]
+KalmanBMatSet           0x080085e7     0xa  Code  Gb  Kalman3.o [1]
+KalmanCovarianceMatSet  0x080085a5     0xa  Code  Gb  Kalman3.o [1]
+KalmanObserveMapMatSet  0x0800856f    0x36  Code  Gb  Kalman3.o [1]
+KalmanQMatSet           0x080085af     0x8  Code  Gb  Kalman3.o [1]
+KalmanRMatSet           0x080085dd     0xa  Code  Gb  Kalman3.o [1]
+KalmanStateTransMatSet  0x08008539    0x36  Code  Gb  Kalman3.o [1]
+KalmanUpdate            0x08008329   0x20a  Code  Gb  Kalman3.o [1]
+LevelCalibrateEnable    0x08005771     0xa  Code  Gb  Accelerometer.o [1]
+LevenbergMarquardt      0x0800b7a1   0x278  Code  Gb  LevenbergMarquardt.o [1]
+LowPassFilter1st        0x0800b5d5    0x3a  Code  Gb  LowPassFilter.o [1]
+LowPassFilter2nd        0x0800b669    0x7a  Code  Gb  LowPassFilter.o [1]
+LowPassFilter2ndFactorCal
+                        0x0800b611    0x52  Code  Gb  LowPassFilter.o [1]
+LowPowerProtect::lastCheckTime
+                        0x2000c494     0x4  Data  Lc  SafeControl.o [1]
+MX_ADC1_Init            0x08010ba1    0x9a  Code  Gb  adc.o [1]
+MX_FREERTOS_Init        0x08010cb5    0x22  Code  Gb  freertos.o [1]
+MX_GPIO_Init            0x080103a5   0x130  Code  Gb  gpio.o [1]
+MX_SPI1_Init            0x080104d5    0x3e  Code  Gb  spi.o [1]
+MX_SPI2_Init            0x08010513    0x3e  Code  Gb  spi.o [1]
+MX_TIM1_Init            0x08010615    0xe0  Code  Gb  tim.o [1]
+MX_TIM3_Init            0x080106f5    0xae  Code  Gb  tim.o [1]
+MX_TIM4_Init            0x080107a3    0xae  Code  Gb  tim.o [1]
+MX_TIM5_Init            0x08010851    0x96  Code  Gb  tim.o [1]
+MX_TIM8_Init            0x080108e7    0xc0  Code  Gb  tim.o [1]
+MX_USART1_UART_Init     0x0800c489    0x34  Code  Gb  usart.o [1]
+MX_USB_DEVICE_Init      0x080135b9    0x38  Code  Gb  usb_device.o [1]
+MagCaliDataInit         0x080057cd   0x172  Code  Gb  Magnetometer.o [1]
+MagCalibrateEnable      0x08006029     0xa  Code  Gb  Magnetometer.o [1]
+MagCalibration          0x08005a35   0x5d4  Code  Gb  Magnetometer.o [1]
+MagCalibration::cali_rotate_angle
+                        0x2000b9b4     0x4  Data  Lc  Magnetometer.o [1]
+MagCalibration::cnt_m   0x2000b9b0     0x4  Data  Lc  Magnetometer.o [1]
+MagCalibration::earthMag
+                        0x2000b9b8     0x4  Data  Lc  Magnetometer.o [1]
+MagCalibration::new_offset
+                        0x2000b990     0xc  Data  Lc  Magnetometer.o [1]
+MagCalibration::new_scale
+                        0x2000b99c     0xc  Data  Lc  Magnetometer.o [1]
+MagCalibration::previousT
+                        0x2000b9a8     0x8  Data  Lc  Magnetometer.o [1]
+MagCalibration::samples
+                        0x2000b948    0x48  Data  Lc  Magnetometer.o [1]
+MagDataPreTreat         0x08005941    0xe4  Code  Gb  Magnetometer.o [1]
+MagDetectCheck::cnt     0x2000bdcc     0x4  Data  Lc  Magnetometer.o [1]
+MagDetectCheck::lastMagRaw
+                        0x2000bdc0     0xc  Data  Lc  Magnetometer.o [1]
+MagGetData              0x08006011     0x4  Code  Gb  Magnetometer.o [1]
+MagSensorInit           0x0800bcef    0x1a  Code  Gb  Module.o [1]
+MagSensorRead           0x0800bd53     0xa  Code  Gb  Module.o [1]
+MagSensorUpdate         0x0800bd4f     0x4  Code  Gb  Module.o [1]
+MagVectorToYawAngle     0x08008a97    0x1c  Code  Gb  Vector3.o [1]
+Matrix3MulVector3       0x0800880b    0x62  Code  Gb  Vector3.o [1]
+Matrix3_Add             0x0800d6fb    0x3e  Code  Gb  Matrix3.o [1]
+Matrix3_Det             0x0800d821   0x166  Code  Gb  Matrix3.o [1]
+Matrix3_Mul             0x0800d777    0x84  Code  Gb  Matrix3.o [1]
+Matrix3_Sub             0x0800d739    0x3e  Code  Gb  Matrix3.o [1]
+Matrix3_Tran            0x0800d7fb    0x26  Code  Gb  Matrix3.o [1]
+MavParamGetIdByName     0x080099a9    0x24  Code  Gb  MavlinkParam.o [1]
+MavParamGetString       0x0800999f     0xa  Code  Gb  MavlinkParam.o [1]
+MavParamGetValue        0x08009721     0xe  Code  Gb  MavlinkParam.o [1]
+MavParamSendCheck       0x080096b9    0x50  Code  Gb  MavlinkParam.o [1]
+MavParamSendCheck::i    0x2000c47c     0x4  Data  Lc  MavlinkParam.o [1]
+MavParamSendEnable      0x08009709     0xa  Code  Gb  MavlinkParam.o [1]
+MavParamSendEnableAll   0x08009713     0xe  Code  Gb  MavlinkParam.o [1]
+MavParamSetDefault      0x080099d1   0x6a6  Code  Gb  MavlinkParam.o [1]
+MavParamSetValue        0x08009731   0x268  Code  Gb  MavlinkParam.o [1]
+MavStatusTextSendCheck  0x0800ae19    0x44  Code  Gb  MavlinkSend.o [1]
+MavStatusTextSendCheck::i
+                        0x2000be88     0x4  Data  Lc  MavlinkSend.o [1]
+MavlinkCurrentParamSet  0x0800a469     0x8  Code  Gb  MavlinkSend.o [1]
+MavlinkDecode           0x08016045   0x248  Code  Gb  MavlinkDecode.o [1]
+MavlinkDecode::msg      0x20008a14   0x110  Data  Lc  MavlinkDecode.o [1]
+MavlinkDecode::status   0x20009000     0xc  Data  Lc  MavlinkDecode.o [1]
+MavlinkDecodeCommand    0x08016299   0x10e  Code  Lc  MavlinkDecode.o [1]
+MavlinkDecode{1}{2}{11}{12}::command
+                        0x20008b24    0x24  Data  Lc  MavlinkDecode.o [1]
+MavlinkDecode{1}{2}{13}::item
+                        0x20008b48    0x28  Data  Lc  MavlinkDecode.o [1]
+MavlinkDecode{1}{2}{3}::set_mode
+                        0x20008fe0     0x8  Data  Lc  MavlinkDecode.o [1]
+MavlinkDecode{1}{2}{4}{5}::request_read
+                        0x2000900c    0x14  Data  Lc  MavlinkDecode.o [1]
+MavlinkDecode{1}{2}{8}{9}::param_set
+                        0x20008fe8    0x18  Data  Lc  MavlinkDecode.o [1]
+MavlinkSendAttitude     0x0800a715    0xda  Code  Gb  MavlinkSend.o [1]
+MavlinkSendCommandAck   0x0800aaa5    0x36  Code  Gb  MavlinkSend.o [1]
+MavlinkSendEnable       0x08004385     0x2  Code  Gb  Message.o [1]
+MavlinkSendGpsRawInt    0x0800a471   0x13c  Code  Gb  MavlinkSend.o [1]
+MavlinkSendHeartbeat    0x0800a271    0x9c  Code  Gb  MavlinkSend.o [1]
+MavlinkSendHomePosition
+                        0x0800ac11    0xce  Code  Gb  MavlinkSend.o [1]
+MavlinkSendLocalPositionNed
+                        0x0800a7ef    0xb0  Code  Gb  MavlinkSend.o [1]
+MavlinkSendMissionAck   0x0800ab29    0x32  Code  Gb  MavlinkSend.o [1]
+MavlinkSendMissionCount
+                        0x0800ab85    0x40  Code  Gb  MavlinkSend.o [1]
+MavlinkSendMissionItem  0x0800abc5    0x4a  Code  Gb  MavlinkSend.o [1]
+MavlinkSendMissionRequest
+                        0x0800aae9    0x40  Code  Gb  MavlinkSend.o [1]
+MavlinkSendNotice       0x0800adcf    0x4a  Code  Gb  MavlinkSend.o [1]
+MavlinkSendNoticeEnable
+                        0x0800ae5d     0x8  Code  Gb  MavlinkSend.o [1]
+MavlinkSendNoticeProgress
+                        0x0800ae65    0x62  Code  Gb  MavlinkSend.o [1]
+MavlinkSendParamValue   0x0800a3a9    0xc0  Code  Gb  MavlinkSend.o [1]
+MavlinkSendRcChannels   0x0800a955   0x150  Code  Gb  MavlinkSend.o [1]
+MavlinkSendScaledImu    0x0800a5ad   0x158  Code  Gb  MavlinkSend.o [1]
+MavlinkSendStatusText   0x0800acdf    0xf0  Code  Gb  MavlinkSend.o [1]
+MavlinkSendSysStatus    0x0800a30d    0x9c  Code  Gb  MavlinkSend.o [1]
+MavlinkSendVfrHud       0x0800a8a1    0xb4  Code  Gb  MavlinkSend.o [1]
+MavlinkSetCommandAck    0x0800aadb     0xa  Code  Gb  MavlinkSend.o [1]
+MemManage_Handler       0x08018eb9     0x2  Code  Gb  stm32f4xx_it.o [1]
+MessageInit             0x080040b9    0xa2  Code  Gb  Message.o [1]
+MessageProtocolTypeDetect
+                        0x08004307    0x66  Code  Gb  Message.o [1]
+MessageProtocolTypeDetect::bskMsg
+                        0x20009490    0x70  Data  Lc  Message.o [1]
+MessageProtocolTypeDetect::mavMsg
+                        0x20009500   0x110  Data  Lc  Message.o [1]
+MessageProtocolTypeDetect::mavStatus
+                        0x20009610     0xc  Data  Lc  Message.o [1]
+MessageQueueCreate      0x080135f1    0x86  Code  Gb  MessageQueue.o [1]
+MessageSendLoop         0x0800415b   0x1ac  Code  Gb  Message.o [1]
+MessageSendLoop::i      0x2000ba98     0x4  Data  Lc  Message.o [1]
+MessageSensorCaliFeedbackEnable
+                        0x0800436d    0x14  Code  Gb  Message.o [1]
+MessageTaskCreate       0x08013bf9    0x22  Code  Gb  MessageTask.o [1]
+MissionControl          0x080159d5    0xa0  Code  Gb  MissionControl.o [1]
+ModuleTaskCreate        0x080137a1    0x38  Code  Gb  ModuleTask.o [1]
+MotorControl            0x08007275   0x1c6  Code  Gb  Motor.o [1]
+MotorControl::motorResetPWM
+                        0x2000c1b0    0x10  Data  Lc  Motor.o [1]
+MotorInit               0x0800725d    0x18  Code  Gb  Motor.o [1]
+NMI_Handler             0x08018eb5     0x2  Code  Gb  stm32f4xx_it.o [1]
+NavigationInit          0x08003365   0x134  Code  Gb  Navigation.o [1]
+NavigationReset         0x08003aad    0x40  Code  Gb  Navigation.o [1]
+NavigationTaskCreate    0x08013a5d    0x38  Code  Gb  NavigationTask.o [1]
+OTG_FS_IRQHandler       0x08018ee9     0x6  Code  Gb  stm32f4xx_it.o [1]
+PCD_WriteEmptyTxFifo    0x080146d5    0x8e  Code  Lc  stm32f4xx_hal_pcd.o [1]
+PIDReadFromFlash        0x08007f91   0x200  Code  Gb  FlightControl.o [1]
+PIDReset                0x08007e0d   0x17a  Code  Lc  FlightControl.o [1]
+PIDWriteToFlash         0x080081b1    0xec  Code  Lc  FlightControl.o [1]
+PID_GetD                0x0800ca0d    0x50  Code  Gb  Pid.o [1]
+PID_GetI                0x0800c9bd    0x48  Code  Gb  Pid.o [1]
+PID_GetP                0x0800c9b1     0xa  Code  Gb  Pid.o [1]
+PID_GetPI               0x0800ca5d    0x5c  Code  Gb  Pid.o [1]
+PID_GetPID              0x0800cab9    0x3c  Code  Gb  Pid.o [1]
+PID_ResetI              0x0800ca05     0x6  Code  Gb  Pid.o [1]
+PID_SetParam            0x0800caf5    0x36  Code  Gb  Pid.o [1]
+ParamInit               0x0800b6e5    0x66  Code  Gb  Parameter.o [1]
+ParamSaveToFlash        0x0800b74b    0x3c  Code  Gb  Parameter.o [1]
+ParamUpdateData         0x0800b787     0xe  Code  Gb  Parameter.o [1]
+PendSV_Handler          0x08013c3d          Code  Gb  portasm.o [1]
+PlaceStausCheck         0x08004795    0x8e  Code  Gb  FlightStatus.o [1]
+PlaceStausCheck::checkNum
+                        0x2000c046     0x2  Data  Lc  FlightStatus.o [1]
+PlaceStausCheck::count  0x2000c048     0x2  Data  Lc  FlightStatus.o [1]
+PlaceStausCheck::lastGyro
+                        0x2000c030     0xc  Data  Lc  FlightStatus.o [1]
+PosCovarianceSelfAdaptation
+                        0x08003945   0x158  Code  Gb  Navigation.o [1]
+PositionEstimate        0x080036b9   0x112  Code  Gb  Navigation.o [1]
+PositionEstimate::count
+                        0x2000c3b8     0x4  Data  Lc  Navigation.o [1]
+PositionEstimate::fuseFlag
+                        0x2000c3a8     0x1  Data  Lc  Navigation.o [1]
+PositionEstimate::previousT
+                        0x2000c3b0     0x8  Data  Lc  Navigation.o [1]
+PositionInnerControl    0x08007aad   0x136  Code  Gb  FlightControl.o [1]
+PositionInnerControl::previousT
+                        0x2000c358     0x8  Data  Lc  FlightControl.o [1]
+PositionInnerControl::velLpf
+                        0x2000c348     0xc  Data  Lc  FlightControl.o [1]
+PositionOuterControl    0x08007c09    0xf0  Code  Gb  FlightControl.o [1]
+PositionOuterControl::posLpf
+                        0x2000c33c     0xc  Data  Lc  FlightControl.o [1]
+Pythagorous2            0x080062d5     0xc  Code  Gb  MathTool.o [1]
+Pythagorous3            0x080062e1    0x10  Code  Gb  MathTool.o [1]
+Radians                 0x080062bd     0x4  Code  Gb  MathTool.o [1]
+RcCheck                 0x08006bbd   0x13a  Code  Gb  Rc.o [1]
+RcCheckAux              0x08006d95   0x1e0  Code  Lc  Rc.o [1]
+RcCheckAux::auxStatus   0x2000c430     0xc  Data  Lc  Rc.o [1]
+RcCheckFailsafe::failsafeCnt
+                        0x2000c12a     0x2  Data  Lc  Rc.o [1]
+RcCheckSticks::armedCheckTime
+                        0x2000c130     0x4  Data  Lc  Rc.o [1]
+RcCheckSticks::armedDisarmedTime
+                        0x2000c134     0x4  Data  Lc  Rc.o [1]
+RcCheckSticks::caliCheckTime
+                        0x2000c138     0x4  Data  Lc  Rc.o [1]
+RcDataUpdate            0x08006cf7    0x8a  Code  Gb  Rc.o [1]
+RcInit                  0x08006b61    0x5c  Code  Gb  Rc.o [1]
+Region$$Table$$Base     0x08018f94           --   Gb  - Linker created -
+Region$$Table$$Limit    0x08018fb4           --   Gb  - Linker created -
+ReturnToHome            0x08015b2d   0x35c  Code  Gb  MissionControl.o [1]
+ReturnToHome::directionToHome
+                        0x2000bba8     0x4  Data  Lc  MissionControl.o [1]
+ReturnToHome::distanceToHome
+                        0x2000bba4     0x4  Data  Lc  MissionControl.o [1]
+ReturnToHome::originYaw
+                        0x2000bba0     0x4  Data  Lc  MissionControl.o [1]
+ReturnToHome::timeRecord
+                        0x2000bb7c    0x20  Data  Lc  MissionControl.o [1]
+ReturnToHome::velCtlTargert
+                        0x2000bbac     0x4  Data  Lc  MissionControl.o [1]
+RollPitchUpdateByKF     0x08008f85   0x15a  Code  Gb  AhrsAux.o [1]
+RollPitchUpdateByKF::fuseFlag
+                        0x2000007c     0x1  Data  Lc  AhrsAux.o [1]
+RollPitchUpdateByKF::input
+                        0x20000070     0xc  Data  Lc  AhrsAux.o [1]
+RotateVector3f          0x0800fa55   0x440  Code  Gb  Rotation.o [1]
+SPI_WaitFlagStateUntilTimeout
+                        0x08012505    0x92  Code  Lc  stm32f4xx_hal_spi.o [1]
+SVC_Handler             0x08013c95          Code  Gb  portasm.o [1]
+SafeArcsin              0x080061c1    0x3e  Code  Gb  MathTool.o [1]
+SafeControl             0x080152fd    0xb8  Code  Gb  SafeControl.o [1]
+SendFreqSort            0x0800438d    0x76  Code  Lc  Message.o [1]
+SendListCreate          0x08004405   0x102  Code  Lc  Message.o [1]
+SendListCreate::interval
+                        0x2000c484     0x4  Data  Lc  Message.o [1]
+SensorCheckStatus       0x0800afb1    0x26  Code  Gb  Sensor.o [1]
+SensorHealthCheck       0x0800afd9   0x170  Code  Gb  Sensor.o [1]
+SensorHealthCheck::acc_offset
+                        0x2000c2a8     0x4  Data  Lc  Sensor.o [1]
+SensorHealthCheck::acc_offset_temp
+                        0x2000c2b0     0x4  Data  Lc  Sensor.o [1]
+SensorHealthCheck::gyro_offset_temp
+                        0x2000c2ac     0x4  Data  Lc  Sensor.o [1]
+SensorHealthCheck::period_cnt
+                        0x2000c2a6     0x2  Data  Lc  Sensor.o [1]
+SensorHealthCheck::staticFlag
+                        0x2000c2a4     0x1  Data  Lc  Sensor.o [1]
+SensorTaskCreate        0x08013939    0x38  Code  Gb  SensorTask.o [1]
+SetAltControlStatus     0x08004829     0x6  Code  Gb  FlightStatus.o [1]
+SetAltCtlStatus         0x08007d07     0xa  Code  Gb  FlightControl.o [1]
+SetAltInnerCtlTarget    0x080076b9     0xa  Code  Gb  FlightControl.o [1]
+SetAltOuterCtlTarget    0x08007a8b     0xa  Code  Gb  FlightControl.o [1]
+SetArmedStatus          0x08004749    0x38  Code  Gb  FlightStatus.o [1]
+SetFailSafeStatus       0x0800499f     0x6  Code  Gb  FlightStatus.o [1]
+SetFlightMode           0x0800484d    0x4e  Code  Gb  FlightStatus.o [1]
+SetFlightStatus         0x08004787     0x6  Code  Gb  FlightStatus.o [1]
+SetInitStatus           0x08004841     0x6  Code  Gb  FlightStatus.o [1]
+SetMaxAltOuterCtl       0x08007df1     0xa  Code  Gb  FlightControl.o [1]
+SetMaxBrakeAngle        0x08007ddd     0xa  Code  Gb  FlightControl.o [1]
+SetMaxPosOuterCtl       0x08007de7     0xa  Code  Gb  FlightControl.o [1]
+SetPosControlStatus     0x08004835     0x6  Code  Gb  FlightStatus.o [1]
+SetPosCtlStatus         0x08007d11     0xa  Code  Gb  FlightControl.o [1]
+SetPosInnerCtlTarget    0x08007be3     0x6  Code  Gb  FlightControl.o [1]
+SetPosOuterCtlTarget    0x08007cf9     0x4  Code  Gb  FlightControl.o [1]
+SetRcTarget             0x08007531    0x46  Code  Gb  FlightControl.o [1]
+SetWaypointCount        0x0800e731     0x6  Code  Gb  WayPointControl.o [1]
+SetWaypointItem         0x0800e74f    0x28  Code  Gb  WayPointControl.o [1]
+SetWaypointRecvCount    0x0800e73d     0x6  Code  Gb  WayPointControl.o [1]
+SetWaypointSendCount    0x0800e749     0x6  Code  Gb  WayPointControl.o [1]
+SetYawCtlTarget         0x08007a0d     0xa  Code  Gb  FlightControl.o [1]
+SetYawHoldStatus        0x08007d1b     0xa  Code  Gb  FlightControl.o [1]
+Sq                      0x080062cf     0x6  Code  Gb  MathTool.o [1]
+SysTick_Handler         0x08018ec1     0x4  Code  Gb  stm32f4xx_it.o [1]
+SystemClock_Config      0x0800c589    0xac  Code  Gb  main.o [1]
+SystemCoreClock         0x200004c4     0x4  Data  Gb  system_stm32f4xx.o [1]
+SystemInit              0x08018e55    0x3a  Code  Gb  system_stm32f4xx.o [1]
+SystemInitCheck         0x08004641   0x108  Code  Gb  FlightStatus.o [1]
+SystemInitCheck::initStep
+                        0x2000c044     0x1  Data  Lc  FlightStatus.o [1]
+TIM3_IRQHandler         0x08018ec5     0x6  Code  Gb  stm32f4xx_it.o [1]
+TIM4_IRQHandler         0x08018ecb     0x6  Code  Gb  stm32f4xx_it.o [1]
+TIM8_TRG_COM_TIM14_IRQHandler
+                        0x08018ed7    0x12  Code  Gb  stm32f4xx_it.o [1]
+TIM_Base_SetConfig      0x08011c8b    0x98  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_OC1_SetConfig       0x08011de9    0x52  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC2_SetConfig       0x08011d91    0x56  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_OC3_SetConfig       0x08011e3b    0x52  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_OC4_SetConfig       0x08011e93    0x48  Code  Lc  stm32f4xx_hal_tim.o [1]
+TIM_TI1_SetConfig       0x08011d23    0x6c  Code  Gb  stm32f4xx_hal_tim.o [1]
+TIM_TI2_SetConfig       0x08011f09    0x36  Code  Lc  stm32f4xx_hal_tim.o [1]
+TempControlSet          0x0800bd69     0x2  Code  Gb  Module.o [1]
+TempSensorRead          0x0800bd4b     0x4  Code  Gb  Module.o [1]
+TransAccToEarthFrame    0x08002f65   0x220  Code  Lc  Ahrs.o [1]
+TransAccToEarthFrame::accAngle
+                        0x20000048     0xc  Data  Lc  Ahrs.o [1]
+TransAccToEarthFrame::offset_cnt
+                        0x20000044     0x2  Data  Lc  Ahrs.o [1]
+TransVelToBodyFrame     0x080093d7    0x4a  Code  Gb  Gps.o [1]
+TransVelToEarthFrame    0x08009421    0x50  Code  Gb  Gps.o [1]
+UART_DMAAbortOnError    0x0800c1a1     0xc  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_EndRxTransfer      0x0800c183    0x1c  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_Receive_IT         0x0800c1ad    0x8c  Code  Lc  stm32f4xx_hal_uart.o [1]
+UART_SetConfig          0x0800c239   0x23e  Code  Lc  stm32f4xx_hal_uart.o [1]
+USART1_IRQHandler       0x08018ed1     0x6  Code  Gb  stm32f4xx_it.o [1]
+USBD_CDC                0x200004d4    0x38  Data  Gb  usbd_cdc.o [1]
+USBD_CDC_CfgFSDesc      0x20000550    0x44  Data  Gb  usbd_cdc.o [1]
+USBD_CDC_CfgHSDesc      0x2000050c    0x44  Data  Gb  usbd_cdc.o [1]
+USBD_CDC_DataIn         0x0800ea99    0x14  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_DataOut        0x0800eaad    0x2a  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_DeInit         0x0800e9fd    0x36  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_DeviceQualifierDesc
+                        0x200004c8     0xc  Data  Lc  usbd_cdc.o [1]
+USBD_CDC_EP0_RxReady    0x0800ead7    0x26  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_GetDeviceQualifierDescriptor
+                        0x0800eb15     0x8  Code  Gb  usbd_cdc.o [1]
+USBD_CDC_GetFSCfgDesc   0x0800eafd     0x8  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_GetHSCfgDesc   0x0800eb05     0x8  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_GetOtherSpeedCfgDesc
+                        0x0800eb0d     0x8  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_Init           0x0800e97d    0x80  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_OtherSpeedCfgDesc
+                        0x20000594    0x44  Data  Gb  usbd_cdc.o [1]
+USBD_CDC_ReceivePacket  0x0800eb87    0x26  Code  Gb  usbd_cdc.o [1]
+USBD_CDC_RegisterInterface
+                        0x0800eb31     0xe  Code  Gb  usbd_cdc.o [1]
+USBD_CDC_SetRxBuffer    0x0800eb4f     0xc  Code  Gb  usbd_cdc.o [1]
+USBD_CDC_SetTxBuffer    0x0800eb3f    0x10  Code  Gb  usbd_cdc.o [1]
+USBD_CDC_Setup          0x0800ea33    0x66  Code  Lc  usbd_cdc.o [1]
+USBD_CDC_Setup::ifalt   0x2000c4ae     0x1  Data  Lc  usbd_cdc.o [1]
+USBD_CDC_TransmitPacket
+                        0x0800eb5b    0x2c  Code  Gb  usbd_cdc.o [1]
+USBD_ClrClassConfig     0x08013d45     0xa  Code  Gb  usbd_core.o [1]
+USBD_CtlContinueRx      0x08012d21     0x4  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlContinueSendData
+                        0x08012cfd     0x4  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlPrepareRx       0x08012d0d    0x14  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlReceiveStatus   0x08012d3f     0xe  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendData        0x08012ced    0x10  Code  Gb  usbd_ioreq.o [1]
+USBD_CtlSendStatus      0x08012d31     0xe  Code  Gb  usbd_ioreq.o [1]
+USBD_FS_ConfigStrDescriptor
+                        0x08018dd9     0xc  Code  Gb  usbd_desc.o [1]
+USBD_FS_DeviceDesc      0x20000604    0x14  Data  Gb  usbd_desc.o [1]
+USBD_FS_DeviceDescriptor
+                        0x08018d9d     0x8  Code  Gb  usbd_desc.o [1]
+USBD_FS_InterfaceStrDescriptor
+                        0x08018de5     0xc  Code  Gb  usbd_desc.o [1]
+USBD_FS_LangIDStrDescriptor
+                        0x08018da5     0x8  Code  Gb  usbd_desc.o [1]
+USBD_FS_ManufacturerStrDescriptor
+                        0x08018db9     0xa  Code  Gb  usbd_desc.o [1]
+USBD_FS_ProductStrDescriptor
+                        0x08018dad     0xc  Code  Gb  usbd_desc.o [1]
+USBD_FS_SerialStrDescriptor
+                        0x08018dcd     0xc  Code  Gb  usbd_desc.o [1]
+USBD_GetDescriptor      0x08016991   0x110  Code  Lc  usbd_ctlreq.o [1]
+USBD_GetString          0x08016ac9    0x4a  Code  Gb  usbd_ctlreq.o [1]
+USBD_Init               0x08013cef    0x26  Code  Gb  usbd_core.o [1]
+USBD_Interface_fops_FS  0x200005d8    0x10  Data  Gb  usbd_cdc_if.o [1]
+USBD_LL_ClearStallEP    0x08012c2b    0x1a  Code  Gb  usbd_conf.o [1]
+USBD_LL_CloseEP         0x08012bf7    0x1a  Code  Gb  usbd_conf.o [1]
+USBD_LL_DataInStage     0x08013e07    0x9a  Code  Gb  usbd_core.o [1]
+USBD_LL_DataOutStage    0x08013da5    0x62  Code  Gb  usbd_core.o [1]
+USBD_LL_DevConnected    0x08013f1f     0x4  Code  Gb  usbd_core.o [1]
+USBD_LL_DevDisconnected
+                        0x08013f23    0x12  Code  Gb  usbd_core.o [1]
+USBD_LL_GetRxDataSize   0x08012cb5     0x8  Code  Gb  usbd_conf.o [1]
+USBD_LL_Init            0x08012b45    0x66  Code  Gb  usbd_conf.o [1]
+USBD_LL_IsStallEP       0x08012c45    0x22  Code  Gb  usbd_conf.o [1]
+USBD_LL_IsoINIncomplete
+                        0x08013f17     0x4  Code  Gb  usbd_core.o [1]
+USBD_LL_IsoOUTIncomplete
+                        0x08013f1b     0x4  Code  Gb  usbd_core.o [1]
+USBD_LL_OpenEP          0x08012bd7    0x20  Code  Gb  usbd_conf.o [1]
+USBD_LL_PrepareReceive  0x08012c9b    0x1a  Code  Gb  usbd_conf.o [1]
+USBD_LL_Reset           0x08013ea1    0x40  Code  Gb  usbd_core.o [1]
+USBD_LL_Resume          0x08013ef3     0x6  Code  Gb  usbd_core.o [1]
+USBD_LL_SOF             0x08013eff    0x18  Code  Gb  usbd_core.o [1]
+USBD_LL_SetSpeed        0x08013ee1     0x6  Code  Gb  usbd_core.o [1]
+USBD_LL_SetUSBAddress   0x08012c67    0x1a  Code  Gb  usbd_conf.o [1]
+USBD_LL_SetupStage      0x08013d4f    0x56  Code  Gb  usbd_core.o [1]
+USBD_LL_StallEP         0x08012c11    0x1a  Code  Gb  usbd_conf.o [1]
+USBD_LL_Start           0x08012bbd    0x1a  Code  Gb  usbd_conf.o [1]
+USBD_LL_Suspend         0x08013ee7     0xc  Code  Gb  usbd_core.o [1]
+USBD_LL_Transmit        0x08012c81    0x1a  Code  Gb  usbd_conf.o [1]
+USBD_LangIDDesc         0x20000618     0x4  Data  Gb  usbd_desc.o [1]
+USBD_ParseSetupRequest  0x08016aa1    0x28  Code  Gb  usbd_ctlreq.o [1]
+USBD_RegisterClass      0x08013d15    0x10  Code  Gb  usbd_core.o [1]
+USBD_SetClassConfig     0x08013d2f    0x16  Code  Gb  usbd_core.o [1]
+USBD_SetConfig::cfgidx  0x2000c4af     0x1  Data  Lc  usbd_ctlreq.o [1]
+USBD_Start              0x08013d25     0xa  Code  Gb  usbd_core.o [1]
+USBD_StdDevReq          0x08016705   0x148  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdEPReq           0x08016891    0xfe  Code  Gb  usbd_ctlreq.o [1]
+USBD_StdItfReq          0x08016851    0x40  Code  Gb  usbd_ctlreq.o [1]
+USBD_StrDesc            0x2000a964   0x200  Data  Gb  usbd_desc.o [1]
+USB_ActivateEndpoint    0x08016d3b    0x84  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ActivateSetup       0x080173a5    0x2e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_CoreInit            0x08016b15    0x6e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_CoreReset           0x08017403    0x28  Code  Lc  stm32f4xx_ll_usb.o [1]
+USB_DeactivateEndpoint  0x08016dc7    0xd0  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_DevConnect          0x08017319     0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_DevDisconnect       0x08017327     0xc  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_DevInit             0x08016bbd   0x128  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_DisableGlobalInt    0x08016b8b     0x6  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0StartXfer        0x080170c3   0x13e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EP0_OutStart        0x080173d3    0x30  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPClearStall        0x0801729b    0x5c  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPSetStall          0x08017245    0x56  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EPStartXfer         0x08016e9d   0x226  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_EnableGlobalInt     0x08016b83     0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_FlushTxFifo         0x08016ce5    0x1e  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetDevSpeed         0x08016d03    0x38  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_GetMode             0x0801739d     0x8  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevAllInEpInterrupt
+                        0x08017357     0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevAllOutEpInterrupt
+                        0x08017349     0xe  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevInEPInterrupt
+                        0x0801737b    0x22  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadDevOutEPInterrupt
+                        0x08017365    0x16  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadInterrupts      0x0801733f     0xa  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_ReadPacket          0x0801722d    0x18  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_SetCurrentMode      0x08016b97    0x26  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_SetDevAddress       0x080172fd    0x16  Code  Gb  stm32f4xx_ll_usb.o [1]
+USB_WritePacket         0x08017207    0x26  Code  Gb  stm32f4xx_ll_usb.o [1]
+UpdateMatrices          0x0800ba25    0xe0  Code  Lc  LevenbergMarquardt.o [1]
+UsageFault_Handler      0x08018ebd     0x2  Code  Gb  stm32f4xx_it.o [1]
+UserControl             0x080153b5    0xc8  Code  Gb  UserControl.o [1]
+UserRxBufferFS          0x20007a14   0x800  Data  Gb  usbd_cdc_if.o [1]
+UserTxBufferFS          0x20008214   0x800  Data  Gb  usbd_cdc_if.o [1]
+Vector3f_Add            0x080087b5    0x12  Code  Gb  Vector3.o [1]
+Vector3f_Sub            0x080087c7    0x10  Code  Gb  Vector3.o [1]
+VectorCrossProduct      0x080087ed    0x1e  Code  Gb  Vector3.o [1]
+VectorRotateToBodyFrame
+                        0x080089e1    0x28  Code  Gb  Vector3.o [1]
+VectorRotateToEarthFrame
+                        0x08008a09    0x26  Code  Gb  Vector3.o [1]
+VelocityEstimate        0x08003499   0x21e  Code  Gb  Navigation.o [1]
+VelocityEstimate::accel_bias
+                        0x2000c2f0     0xc  Data  Lc  Navigation.o [1]
+VelocityEstimate::count
+                        0x2000c308     0x4  Data  Lc  Navigation.o [1]
+VelocityEstimate::previousT
+                        0x2000c300     0x8  Data  Lc  Navigation.o [1]
+WaypointControl         0x0800e6c9    0x62  Code  Gb  WayPointControl.o [1]
+WaypointControl::wpStep
+                        0x2000c498     0x1  Data  Lc  WayPointControl.o [1]
+WindEstimate            0x080048a1    0xe8  Code  Gb  FlightStatus.o [1]
+WindEstimate::lastWindSpeed
+                        0x2000c064     0x4  Data  Lc  FlightStatus.o [1]
+WindEstimate::previousT
+                        0x2000c050     0x8  Data  Lc  FlightStatus.o [1]
+WindEstimate::tiltAngle
+                        0x2000c060     0x4  Data  Lc  FlightStatus.o [1]
+WrapDegree360           0x080062f1    0x26  Code  Gb  MathTool.o [1]
+YawControl              0x080157f9    0x98  Code  Lc  UserControl.o [1]
+YawControl::lastTimeyawChanged
+                        0x2000c2c8     0x4  Data  Lc  UserControl.o [1]
+YawControl::yawHoldChanged
+                        0x2000c2c0     0x1  Data  Lc  UserControl.o [1]
+_Error_Handler          0x0800c655     0x2  Code  Gb  main.o [1]
+_Rand_idx               0x2000b84c     0x4  Data  Lc  rand.o [3]
+_Rand_rv                0x2000b7cc    0x80  Data  Lc  rand.o [3]
+_Randinit               0x2000061c     0x1  Data  Gb  rand.o [3]
+_Randseed               0x20000620     0x4  Data  Gb  rand.o [3]
+__aeabi_cdcmpeq         0x08017445          Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x0800ebad          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x0800e421          Code  Gb  DblCmpGe.o [4]
+__aeabi_d2f             0x08006af9          Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x0800e535          Code  Gb  DblToS32.o [4]
+__aeabi_dadd            0x0800ee25          Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x0800ebdd          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08008b01          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x0800e451          Code  Gb  DblSub.o [4]
+__aeabi_f2d             0x08003d29          Code  Gb  FltToDbl.o [4]
+__aeabi_f2ulz           0x0800e68d          Code  Gb  FltToU64.o [4]
+__aeabi_i2d             0x0800c6f9          Code  Gb  S32ToDbl.o [4]
+__aeabi_ldiv0           0x080152f9          Code  Gb  I64DivZer.o [5]
+__aeabi_memclr          0x0800e63d          Code  Gb  ABImemclr.o [5]
+__aeabi_memclr4         0x08008321          Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy          0x08003d71          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4         0x08003d91          Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8         0x08003d91          Code  Gb  ABImemcpy.o [5]
+__aeabi_memset4         0x0800d6c1          Code  Gb  ABImemset48.o [5]
+__aeabi_memset8         0x0800d6c1          Code  Gb  ABImemset48.o [5]
+__aeabi_ul2d            0x08008ab9          Code  Gb  U64ToDbl.o [4]
+__aeabi_uldivmod        0x08012e0d          Code  Gb  I64DivMod.o [5]
+__cmain                 0x08018fd5          Code  Gb  cmain.o [5]
+__data_GetMemChunk      0x080016dd    0x2c  Code  Gb  xgetmemchunk.o [3]
+__data_GetMemChunk::start
+                        0x2000c49c     0x4  Data  Lc  xgetmemchunk.o [3]
+__exit                  0x08001709    0x14  Code  Gb  exit.o [6]
+__iar_Exp64             0x080174d5   0x3b8  Code  Gb  iar_Exp64.o [4]
+__iar_Memset4_word      0x0800d6c9          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x0800d6c9          Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x080129d9          Code  Gb  ABImemset.o [5]
+__iar_Pow64             0x080147d1   0x654  Code  Lc  pow64.o [4]
+__iar_Sin32             0x0800b3f5   0x198  Code  Lc  cos_sin32.o [4]
+__iar_asin32            0x0800bd6d          Code  Gb  asinf.o [4]
+__iar_atan2_32          0x0800962d          Code  Gb  atan2f.o [4]
+__iar_cos32             0x0800b5cd     0x4  Code  Gb  cos_sin32.o [4]
+__iar_cos_medium32      0x0800b5cd     0x4  Code  Gb  cos_sin32.o [4]
+__iar_cos_mediumf       0x0800b5cd     0x4  Code  Gb  cos_sin32.o [4]
+__iar_dadd              0x0800e461          Code  Gb  DblSub.o [4]
+__iar_data_init3        0x08018f49    0x28  Code  Gb  data_init.o [5]
+__iar_dlfree            0x08001163   0x4f6  Code  Gb  dlmalloc.o [3]
+__iar_dlmalloc          0x08000ead   0x2b6  Code  Gb  dlmalloc.o [3]
+__iar_dsub              0x0800ee35          Code  Gb  DblAdd.o [4]
+__iar_dsubStart         0x0800ee47          Code  Gb  DblAdd.o [4]
+__iar_floor32           0x080129ad          Code  Gb  floorf.o [4]
+__iar_frexp             0x08017471          Code  Gb  frexp.o [4]
+__iar_frexpl            0x08017471          Code  Gb  frexp.o [4]
+__iar_init_vfp          0x08018f71          Code  Gb  fpinit_M.o [4]
+__iar_ldexp64           0x080178ed          Code  Gb  ldexp.o [4]
+__iar_lz77_init_single3
+                        0x08001663    0x7a  Code  Gb  lz77_init_single.o [5]
+__iar_pow64             0x08014ec5    0x14  Code  Gb  pow64.o [4]
+__iar_pow_medium        0x08014ec5    0x14  Code  Gb  pow64.o [4]
+__iar_pow_medium64      0x08014ec5    0x14  Code  Gb  pow64.o [4]
+__iar_pow_mediuml       0x08014ec5    0x14  Code  Gb  pow64.o [4]
+__iar_program_start     0x08019051          Code  Gb  cstartup_M.o [5]
+__iar_scalbln64         0x080178ed          Code  Gb  ldexp.o [4]
+__iar_scalbn64          0x080178ed          Code  Gb  ldexp.o [4]
+__iar_sin32             0x0800b5d1     0x4  Code  Gb  cos_sin32.o [4]
+__iar_sin_medium32      0x0800b5d1     0x4  Code  Gb  cos_sin32.o [4]
+__iar_sin_mediumf       0x0800b5d1     0x4  Code  Gb  cos_sin32.o [4]
+__iar_softfp___iar_frexp64
+                        0x08017465          Code  Gb  frexp.o [4]
+__iar_softfp_frexp      0x08017465          Code  Gb  frexp.o [4]
+__iar_softfp_frexpl     0x08017465          Code  Gb  frexp.o [4]
+__iar_sqrt32            0x08009699          Code  Gb  sqrtf.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [2]
+__iar_vfp___iar_floor32
+                        0x0801299d          Code  Gb  floorf.o [4]
+__iar_vfp_floorf        0x0801299d          Code  Gb  floorf.o [4]
+__iar_vfp_pow           0x08012d7b    0x10  Code  Gb  math_wrappers64.o [4]
+__iar_xatanf            0x0800e571          Code  Gb  xatanf.o [4]
+__iar_zero_init3        0x08018f09    0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x08018ff3     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000          Data  Gb  startup_stm32f407xx.o [1]
+_call_main              0x08018fe1          Code  Gb  cmain.o [5]
+_exit                   0x08018ffd          Code  Gb  cexit.o [5]
+_gm_                    0x2000ad3c   0x1d8  Data  Lc  dlmalloc.o [3]
+_main                   0x08018fef          Code  Gb  cmain.o [5]
+aRxBuffer               0x2000c384     0xc  Data  Gb  Ublox.o [1]
+abort                   0x0800165d     0x6  Code  Gb  abort.o [3]
+acc                     0x2000b850    0x7c  Data  Gb  Accelerometer.o [1]
+add_segment             0x0800054d   0x1f2  Code  Lc  dlmalloc.o [3]
+ahrs                    0x2000acd0    0x6c  Data  Gb  Ahrs.o [1]
+ahrsAux                 0x2000bd00    0x40  Data  Gb  AhrsAux.o [1]
+ak8975Detect            0x0800f355    0x24  Code  Gb  Ak8975.o [1]
+ak8975Init              0x0800f379    0x48  Code  Gb  Ak8975.o [1]
+ak8975Read              0x0800f409    0x72  Code  Gb  Ak8975.o [1]
+ak8975Update            0x0800f3c1    0x48  Code  Gb  Ak8975.o [1]
+armedCheckFlag          0x2000c128     0x1  Data  Lc  Rc.o [1]
+asinf                   0x0800bd6d          Code  Gb  asinf.o [4]
+atan2f                  0x0800962d          Code  Gb  atan2f.o [4]
+baro                    0x20000004    0x14  Data  Gb  Barometer.o [1]
+boardInit               0x080082e9     0x4  Code  Gb  Board.o [1]
+bsklinkSendFlag         0x2000b52c   0x100  Data  Gb  Message.o [1]
+bsklinkSendFreq         0x20009a24   0x100  Data  Gb  Message.o [1]
+bsklinkSendList         0x2000ba34    0x64  Data  Gb  Message.o [1]
+bsklinkSortResult       0x20009c24   0x100  Data  Gb  Message.o [1]
+channelEnableBit        0x2000c068     0x1  Data  Gb  PwmIn.o [1]
+channelWatchDogCount    0x2000c07c    0x14  Data  Lc  PwmIn.o [1]
+commandAck              0x2000c480     0x4  Data  Gb  MavlinkSend.o [1]
+compassGetDeclination   0x0800db1d   0x11a  Code  Gb  Declination.o [1]
+cosf                    0x0800b5cd     0x4  Code  Gb  cos_sin32.o [4]
+crc_accumulate          0x0800a0e1    0x1e  Code  Lc  MavlinkSend.o [1]
+currentParamNum         0x2000c4a0     0x2  Data  Lc  MavlinkSend.o [1]
+declination_keys        0x0800df8c    0x4c  Data  Lc  Declination.o [1]
+declination_values      0x0800dfd8   0x448  Data  Lc  Declination.o [1]
+decodeMode              0x2000ba30     0x1  Data  Gb  Message.o [1]
+error                   0x2000c30c    0x18  Data  Lc  FaultDetect.o [1]
+escCaliFlag             0x2000c19c     0x1  Data  Gb  Motor.o [1]
+exception_signs         0x0800df28    0x64  Data  Lc  Declination.o [1]
+exceptions              0x0800dc4c   0x2dc  Data  Lc  Declination.o [1]
+exit                    0x08018ff7     0x4  Code  Gb  exit.o [3]
+failsafeTime            0x2000c12c     0x4  Data  Gb  Rc.o [1]
+fc                      0x2000a74c   0x218  Data  Gb  FlightControl.o [1]
+flashInit               0x0800cb59    0xa0  Code  Gb  W25Qxx.o [1]
+flash_id                0x2000c3fc     0x4  Data  Gb  W25Qxx.o [1]
+flash_info              0x2000c400     0xc  Data  Lc  W25Qxx.o [1]
+flightControlTask       0x2000c43c     0x4  Data  Gb  ControlTask.o [1]
+flightStatusTask        0x2000c45c     0x4  Data  Gb  NavigationTask.o [1]
+floorf                  0x080129ad          Code  Gb  floorf.o [4]
+flyStatus               0x2000c03c     0x8  Data  Gb  FlightStatus.o [1]
+free                    0x08012ce9     0x4  Code  Gb  heaptramp0.o [3]
+getDutyFromPwmIn        0x0800c959     0xa  Code  Gb  PwmIn.o [1]
+getSysTimeMs            0x0800831d     0x4  Code  Gb  Board.o [1]
+getSysTimeUs            0x080082f1    0x26  Code  Gb  Board.o [1]
+gps                     0x2000bbb0    0x58  Data  Gb  Gps.o [1]
+gyro                    0x2000ba9c    0x5c  Data  Gb  Gyroscope.o [1]
+hUsbDeviceFS            0x2000a528   0x224  Data  Gb  usb_device.o [1]
+hadc1                   0x2000bcb8    0x48  Data  Gb  adc.o [1]
+hpcd_USB_OTG_FS         0x20009e24   0x3f0  Data  Gb  usbd_conf.o [1]
+hspi1                   0x2000bc08    0x58  Data  Gb  spi.o [1]
+hspi2                   0x2000bc60    0x58  Data  Gb  spi.o [1]
+htim1                   0x2000bec8    0x3c  Data  Gb  tim.o [1]
+htim14                  0x2000be8c    0x3c  Data  Gb  stm32f4xx_hal_timebase_TIM.o [1]
+htim3                   0x2000bf04    0x3c  Data  Gb  tim.o [1]
+htim4                   0x2000bf40    0x3c  Data  Gb  tim.o [1]
+htim5                   0x2000bf7c    0x3c  Data  Gb  tim.o [1]
+htim8                   0x2000bfb8    0x3c  Data  Gb  tim.o [1]
+huart1                  0x2000be10    0x40  Data  Gb  usart.o [1]
+imuDataPreTreatTask     0x2000c468     0x4  Data  Gb  SensorTask.o [1]
+imuSensorReadTask       0x2000c48c     0x4  Data  Gb  ModuleTask.o [1]
+init_mparams            0x080001a7    0x32  Code  Lc  dlmalloc.o [3]
+init_top                0x080001d9    0x32  Code  Lc  dlmalloc.o [3]
+invSensorBuffer         0x2000c3ec    0x10  Data  Gb  Icm20689.o [1]
+invSensorDetect         0x0800f035    0x88  Code  Gb  Icm20689.o [1]
+invSensorInit           0x0800f0bd    0xc6  Code  Gb  Icm20689.o [1]
+invSensorRead           0x0800f183    0x50  Code  Gb  Icm20689.o [1]
+invSensorReadAccel      0x0800f1d5    0x46  Code  Gb  Icm20689.o [1]
+invSensorReadGyro       0x0800f21d    0x48  Code  Gb  Icm20689.o [1]
+invSensorReadTemperature
+                        0x0800f279    0x2a  Code  Gb  Icm20689.o [1]
+kalmanAux               0x2000b080   0x16c  Data  Gb  AhrsAux.o [1]
+kalmanPos               0x2000a380   0x16c  Data  Gb  Navigation.o [1]
+kalmanRollPitch         0x2000ab64   0x16c  Data  Gb  Ahrs.o [1]
+kalmanVel               0x2000a214   0x16c  Data  Gb  Navigation.o [1]
+kalmanYaw               0x2000af14   0x16c  Data  Gb  Ahrs.o [1]
+ldexp                   0x080178ed          Code  Gb  ldexp.o [4]
+ldexpl                  0x080178ed          Code  Gb  ldexp.o [4]
+lm_lambda               0x2000c450     0x8  Data  Gb  LevenbergMarquardt.o [1]
+lnbias                  0x08014ed8   0x420  Data  Lc  pow64.o [4]
+mag                     0x2000bd90    0x30  Data  Gb  Magnetometer.o [1]
+magData                 0x2000c448     0x8  Data  Gb  Ak8975.o [1]
+main                    0x0800c54d    0x3c  Code  Gb  main.o [1]
+mainTaskHandle          0x2000c478     0x4  Data  Gb  freertos.o [1]
+mavNotice               0x0800e7d4   0x1a8  Data  Gb  MavlinkNotice.o [1]
+mavParam                0x2000961c   0x408  Data  Gb  MavlinkParam.o [1]
+mavParamSendFlag        0x2000b428   0x104  Data  Gb  MavlinkParam.o [1]
+mavParamStrings         0x200000a4   0x408  Data  Gb  MavlinkParam.o [1]
+mav_array_memcpy        0x0800a1e1     0xe  Code  Lc  MavlinkSend.o [1]
+mavlinkSendFlag         0x2000b62c   0x100  Data  Gb  Message.o [1]
+mavlinkSendFreq         0x20009b24   0x100  Data  Gb  Message.o [1]
+mavlinkSendList         0x2000bb08    0x64  Data  Gb  Message.o [1]
+mavlinkSortResult       0x20009d24   0x100  Data  Gb  Message.o [1]
+mavlink_finalize_message_chan
+                        0x0800a0ff    0xba  Code  Lc  MavlinkSend.o [1]
+mavlink_frame_char_buffer
+                        0x08015eed   0x158  Code  Lc  MavlinkDecode.o [1]
+mavlink_frame_char_buffer
+                        0x08003f61   0x158  Code  Lc  Message.o [1]
+mavlink_frame_char_buffer::mavlink_message_crcs
+                        0x080163ac   0x100  Data  Lc  MavlinkDecode.o [1]
+mavlink_frame_char_buffer::mavlink_message_crcs
+                        0x08004540   0x100  Data  Lc  Message.o [1]
+mavlink_get_channel_buffer::m_mavlink_buffer
+                        0x20008ba0   0x440  Data  Lc  MavlinkDecode.o [1]
+mavlink_get_channel_buffer::m_mavlink_buffer
+                        0x20009050   0x440  Data  Lc  Message.o [1]
+mavlink_get_channel_status::m_mavlink_status
+                        0x20008b70    0x30  Data  Lc  MavlinkDecode.o [1]
+mavlink_get_channel_status::m_mavlink_status
+                        0x2000c13c    0x30  Data  Lc  MavlinkSend.o [1]
+mavlink_get_channel_status::m_mavlink_status
+                        0x20009020    0x30  Data  Lc  Message.o [1]
+mavlink_msg_mission_item_encode
+                        0x0800a1ef    0x82  Code  Lc  MavlinkSend.o [1]
+mavlink_msg_to_send_buffer
+                        0x0800a1b9    0x28  Code  Lc  MavlinkSend.o [1]
+mavlink_update_checksum
+                        0x08015ecd    0x1e  Code  Lc  MavlinkDecode.o [1]
+mavlink_update_checksum
+                        0x08003f41    0x1e  Code  Lc  Message.o [1]
+messageQueue            0x2000c360    0x18  Data  Gb  MessageQueue.o [1]
+messageTask             0x2000c488     0x4  Data  Gb  MessageTask.o [1]
+messageTorReadBuffer    0x2000c0d4    0x34  Data  Gb  Message.o [1]
+messageType             0x2000ba31     0x1  Data  Gb  Message.o [1]
+motorPWM                0x2000c1a0    0x10  Data  Lc  Motor.o [1]
+mparams                 0x2000c390    0x18  Data  Lc  dlmalloc.o [3]
+myParameters            0x20006a14  0x1000  Data  Gb  Parameter.o [1]
+nav                     0x2000a4ec    0x3c  Data  Gb  Navigation.o [1]
+navigationTask          0x2000c458     0x4  Data  Gb  NavigationTask.o [1]
+orientationStatus       0x2000c4ad     0x1  Data  Gb  Sensor.o [1]
+osDelay                 0x0800c6a3     0xe  Code  Gb  cmsis_os.o [1]
+osDelayMs               0x080082ed     0x4  Code  Gb  Board.o [1]
+osDelayUntil            0x0800c6eb     0xe  Code  Gb  cmsis_os.o [1]
+osKernelStart           0x0800c659     0xa  Code  Gb  cmsis_os.o [1]
+osKernelSysTick         0x0800c663    0x10  Code  Gb  cmsis_os.o [1]
+osMessageCreate         0x0800c6b1     0xa  Code  Gb  cmsis_os.o [1]
+osSystickHandler        0x0800c6bb    0x14  Code  Gb  cmsis_os.o [1]
+osThreadCreate          0x0800c673    0x30  Code  Gb  cmsis_os.o [1]
+osThreadResumeAll       0x0800c6d9    0x12  Code  Gb  cmsis_os.o [1]
+osThreadSuspendAll      0x0800c6cf     0xa  Code  Gb  cmsis_os.o [1]
+otherSensorTask         0x2000c46c     0x4  Data  Gb  SensorTask.o [1]
+p_spl0601               0x2000c21c     0x4  Data  Lc  Spl06.o [1]
+parameterStates         0x2000c490     0x4  Data  Gb  Parameter.o [1]
+pid_ack                 0x2000c4ac     0x1  Data  Gb  bsklinkSend.o [1]
+posCtlTarget            0x2000bb6c     0xc  Data  Lc  MissionControl.o [1]
+posCtlTarget            0x2000c2b4     0xc  Data  Lc  UserControl.o [1]
+pow                     0x08014ec5    0x14  Code  Gb  pow64.o [4]
+powl                    0x08014ec5    0x14  Code  Gb  pow64.o [4]
+prepend_alloc           0x0800020b   0x342  Code  Lc  dlmalloc.o [3]
+prvAddCurrentTaskToDelayedList
+                        0x0800d64d    0x64  Code  Lc  tasks.o [1]
+prvAddNewTaskToReadyList
+                        0x0800cf35    0xbc  Code  Lc  tasks.o [1]
+prvCheckForValidListAndQueue
+                        0x0801293d    0x46  Code  Lc  timers.o [1]
+prvCopyDataFromQueue    0x08011501    0x26  Code  Lc  queue.o [1]
+prvCopyDataToQueue      0x08011499    0x68  Code  Lc  queue.o [1]
+prvIdleTask             0x0800d475    0x6a  Code  Lc  tasks.o [1]
+prvInitialiseNewTask    0x0800ce8d    0xa8  Code  Lc  tasks.o [1]
+prvInsertBlockIntoFreeList
+                        0x08008767    0x48  Code  Lc  heap_4.o [1]
+prvInsertTimerInActiveList
+                        0x08012829    0x36  Code  Lc  timers.o [1]
+prvProcessReceivedCommands
+                        0x08012861    0xdc  Code  Lc  timers.o [1]
+prvProcessTimerOrBlockTask
+                        0x080126df    0xa6  Code  Lc  timers.o [1]
+prvResetNextTaskUnblockTime
+                        0x0800d4df    0x1c  Code  Lc  tasks.o [1]
+prvSampleTimeNow        0x08012785    0xa4  Code  Lc  timers.o [1]
+prvSampleTimeNow::xLastTime
+                        0x2000c004     0x4  Data  Lc  timers.o [1]
+prvTaskExitError        0x08011655    0x28  Code  Lc  port.o [1]
+prvTimerTask            0x080126c1    0x1e  Code  Lc  timers.o [1]
+prvUnlockQueue          0x08011527    0x60  Code  Lc  queue.o [1]
+pvPortMalloc            0x080085f1   0x11e  Code  Gb  heap_4.o [1]
+pvTaskIncrementMutexHeldCount
+                        0x0800d625    0x14  Code  Gb  tasks.o [1]
+pwmInInit               0x0800c71d    0x5c  Code  Gb  PwmIn.o [1]
+pxCurrentTCB            0x2000b754     0x4  Data  Gb  tasks.o [1]
+pxCurrentTimerList      0x2000bff4     0x4  Data  Lc  timers.o [1]
+pxDelayedTaskList       0x2000b758     0x4  Data  Lc  tasks.o [1]
+pxEnd                   0x2000062c     0x4  Data  Lc  heap_4.o [1]
+pxOverflowDelayedTaskList
+                        0x2000b75c     0x4  Data  Lc  tasks.o [1]
+pxOverflowTimerList     0x2000bff8     0x4  Data  Lc  timers.o [1]
+pxPortInitialiseStack   0x0801162d    0x26  Code  Gb  port.o [1]
+pxReadyTasksLists       0x2000b1ec   0x12c  Data  Lc  tasks.o [1]
+quadX                   0x08007480    0x84  Data  Gb  Motor.o [1]
+rand                    0x0800bdc9    0x96  Code  Gb  rand.o [3]
+rcAuxMode               0x2000c270    0x24  Data  Gb  Rc.o [1]
+rcCommand               0x2000c460     0x8  Data  Gb  Rc.o [1]
+rcData                  0x2000c108    0x20  Data  Gb  Rc.o [1]
+receiverPwmIn           0x2000c06c    0x10  Data  Gb  PwmIn.o [1]
+recvStatus              0x2000c380     0x1  Data  Lc  Ublox.o [1]
+rthStep                 0x2000bb78     0x1  Data  Gb  MissionControl.o [1]
+scalbln                 0x080178ed          Code  Gb  ldexp.o [4]
+scalblnl                0x080178ed          Code  Gb  ldexp.o [4]
+scalbn                  0x080178ed          Code  Gb  ldexp.o [4]
+scalbnl                 0x080178ed          Code  Gb  ldexp.o [4]
+segment_holding         0x08000189    0x1e  Code  Lc  dlmalloc.o [3]
+sensorCali              0x2000ba2c     0x4  Data  Gb  Message.o [1]
+sensorHealth            0x2000c294    0x10  Data  Gb  Sensor.o [1]
+sinf                    0x0800b5d1     0x4  Code  Gb  cos_sin32.o [4]
+spiReadInvSensor        0x0800efdd    0x58  Code  Gb  Icm20689.o [1]
+spiReadMag              0x0800f2fd    0x58  Code  Gb  Ak8975.o [1]
+spiWriteInvSensor       0x0800ef9d    0x40  Code  Gb  Icm20689.o [1]
+spiWriteMag             0x0800f2bd    0x40  Code  Gb  Ak8975.o [1]
+spl0601                 0x2000c1f0    0x2c  Data  Lc  Spl06.o [1]
+spl0601Data             0x2000c2d4    0x1c  Data  Lc  Spl06.o [1]
+spl0601Detect           0x0800f8d1    0x70  Code  Gb  Spl06.o [1]
+spl0601GetCalibrationParamters
+                        0x0800f629   0x11a  Code  Gb  Spl06.o [1]
+spl0601GetPressure      0x0800f83b    0x96  Code  Gb  Spl06.o [1]
+spl0601GetRawPressure   0x0800f773    0x30  Code  Gb  Spl06.o [1]
+spl0601GetRawTemperature
+                        0x0800f743    0x30  Code  Gb  Spl06.o [1]
+spl0601GetTemperature   0x0800f7db    0x60  Code  Gb  Spl06.o [1]
+spl0601Init             0x0800f7a3    0x38  Code  Gb  Spl06.o [1]
+spl0601RateSet          0x0800f52b    0xfe  Code  Gb  Spl06.o [1]
+spl0601Read             0x0800f9e9    0x10  Code  Gb  Spl06.o [1]
+spl0601ReadTemperature  0x0800f9f9    0x14  Code  Gb  Spl06.o [1]
+spl0601Update           0x0800f945    0xa4  Code  Gb  Spl06.o [1]
+spl06Read               0x0800f4dd    0x4e  Code  Gb  Spl06.o [1]
+spl06Write              0x0800f499    0x44  Code  Gb  Spl06.o [1]
+sqrtf                   0x08009699          Code  Gb  sqrtf.o [4]
+startFlightControlTask  0x08013ac5    0x78  Code  Gb  ControlTask.o [1]
+startFlightControlTask::count
+                        0x2000c470     0x4  Data  Lc  ControlTask.o [1]
+startFlightStatusTask   0x08013a33    0x2a  Code  Gb  NavigationTask.o [1]
+startImuDataPreTreatTask
+                        0x0801380d    0xbe  Code  Gb  SensorTask.o [1]
+startImuSensorReadTask  0x080136ad    0x70  Code  Gb  ModuleTask.o [1]
+startMainTask           0x08010cdd    0x3a  Code  Gb  freertos.o [1]
+startMessageTask        0x08013b85    0x72  Code  Gb  MessageTask.o [1]
+startNavigationTask     0x080139a5    0x8e  Code  Gb  NavigationTask.o [1]
+startOtherSensorTask    0x080138cb    0x6c  Code  Gb  SensorTask.o [1]
+startOtherSensorTask::count
+                        0x2000c4a4     0x2  Data  Lc  SensorTask.o [1]
+startSensorUpdateTask   0x0801371d    0x84  Code  Gb  ModuleTask.o [1]
+startSensorUpdateTask::count
+                        0x2000c4a2     0x2  Data  Lc  ModuleTask.o [1]
+statusTextSendFlag      0x2000be50    0x38  Data  Gb  MavlinkSend.o [1]
+statustext              0x2000c0a0    0x34  Data  Gb  MavlinkSend.o [1]
+strlen                  0x0800e655          Code  Gb  strlen.o [5]
+strncmp                 0x0800e615    0x28  Code  Gb  strncmp.o [3]
+sys_alloc               0x08000745   0x164  Code  Lc  dlmalloc.o [3]
+sys_trim                0x080008a9    0x66  Code  Lc  dlmalloc.o [3]
+tempPID                 0x2000c1d0    0x20  Data  Gb  Sensor.o [1]
+time                    0x2000c378     0x8  Data  Gb  Ublox.o [1]
+tmalloc_large           0x0800091d   0x384  Code  Lc  dlmalloc.o [3]
+tmalloc_small           0x08000ca1   0x1fe  Code  Lc  dlmalloc.o [3]
+ublox                   0x2000bd48    0x48  Data  Gb  Ublox.o [1]
+ubloxDecode             0x080068b9   0x11a  Code  Lc  Ublox.o [1]
+ubloxDecode::ubloxRaw   0x2000b318   0x110  Data  Lc  Ublox.o [1]
+ubloxGetData            0x080069e5     0x8  Code  Gb  Ublox.o [1]
+ubloxInit               0x08006367   0x2de  Code  Gb  Ublox.o [1]
+ubloxPayloadDecode      0x08006649   0x26e  Code  Lc  Ublox.o [1]
+ubloxSetPrt             0x080069f5    0xbc  Code  Lc  Ublox.o [1]
+ucHeap                  0x2000063c  0x3c00  Data  Lc  heap_4.o [1]
+ucMaxSysCallPriority    0x200004ac     0x1  Data  Lc  port.o [1]
+ulMaxPRIGROUPValue      0x200004b4     0x4  Data  Lc  port.o [1]
+uwTick                  0x200004bc     0x4  Data  Gb  stm32f4xx_hal.o [1]
+uwTickFreq              0x200004b8     0x1  Data  Gb  stm32f4xx_hal.o [1]
+uwTickPrio              0x200004c0     0x4  Data  Gb  stm32f4xx_hal.o [1]
+uxCriticalNesting       0x200004b0     0x4  Data  Lc  port.o [1]
+uxCurrentNumberOfTasks  0x2000b778     0x4  Data  Lc  tasks.o [1]
+uxDeletedTasksWaitingCleanUp
+                        0x2000b760     0x4  Data  Lc  tasks.o [1]
+uxListRemove            0x08012603    0x24  Code  Gb  list.o [1]
+uxPendedTicks           0x2000b788     0x4  Data  Lc  tasks.o [1]
+uxSchedulerSuspended    0x2000b79c     0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x2000b794     0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x2000b780     0x4  Data  Lc  tasks.o [1]
+vListInitialise         0x08012597    0x1a  Code  Gb  list.o [1]
+vListInitialiseItem     0x080125b1     0x6  Code  Gb  list.o [1]
+vListInsert             0x080125cf    0x34  Code  Gb  list.o [1]
+vListInsertEnd          0x080125b7    0x18  Code  Gb  list.o [1]
+vPortEnableVFP          0x08013cc9          Code  Gb  portasm.o [1]
+vPortEnterCritical      0x08011721    0x32  Code  Gb  port.o [1]
+vPortExitCritical       0x08011753    0x22  Code  Gb  port.o [1]
+vPortFree               0x0800870f    0x58  Code  Gb  heap_4.o [1]
+vPortStartFirstTask     0x08013cb1          Code  Gb  portasm.o [1]
+vPortValidateInterruptPriority
+                        0x0801179d    0x44  Code  Gb  port.o [1]
+vQueueAddToRegistry     0x08011587    0x54  Code  Gb  queue.o [1]
+vQueueWaitForMessageRestricted
+                        0x080115e5    0x48  Code  Gb  queue.o [1]
+vTaskDelay              0x0800d075    0x42  Code  Gb  tasks.o [1]
+vTaskDelayUntil         0x0800cff1    0x84  Code  Gb  tasks.o [1]
+vTaskMissedYield        0x0800d469     0xa  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventList   0x0800d30f    0x26  Code  Gb  tasks.o [1]
+vTaskPlaceOnEventListRestricted
+                        0x0800d33f    0x36  Code  Gb  tasks.o [1]
+vTaskPriorityInherit    0x0800d513    0x80  Code  Gb  tasks.o [1]
+vTaskSetTimeOutState    0x0800d3df    0x20  Code  Gb  tasks.o [1]
+vTaskStartScheduler     0x0800d0b7    0x6a  Code  Gb  tasks.o [1]
+vTaskSuspendAll         0x0800d121     0xc  Code  Gb  tasks.o [1]
+vTaskSwitchContext      0x0800d2b5    0x5a  Code  Gb  tasks.o [1]
+warnning                0x2000c3cc    0x10  Data  Lc  FaultDetect.o [1]
+windSpeed               0x2000c058     0x4  Data  Gb  FlightStatus.o [1]
+windSpeedAcc            0x2000c05c     0x4  Data  Gb  FlightStatus.o [1]
+wpCount                 0x2000c4a6     0x2  Data  Gb  WayPointControl.o [1]
+wpCurrentCount          0x2000c49a     0x2  Data  Gb  WayPointControl.o [1]
+wpItem                  0x2000423c  0x27d8  Data  Gb  WayPointControl.o [1]
+wpRecvCount             0x2000c4a8     0x2  Data  Gb  WayPointControl.o [1]
+wpSendCount             0x2000c4aa     0x2  Data  Gb  WayPointControl.o [1]
+xActiveTimerList1       0x2000c008    0x14  Data  Lc  timers.o [1]
+xActiveTimerList2       0x2000c01c    0x14  Data  Lc  timers.o [1]
+xBlockAllocatedBit      0x20000638     0x4  Data  Lc  heap_4.o [1]
+xDelayedTaskList1       0x2000b7a0    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x2000b7b4    0x14  Data  Lc  tasks.o [1]
+xFreeBytesRemaining     0x20000630     0x4  Data  Lc  heap_4.o [1]
+xIdleTaskHandle         0x2000b7c8     0x4  Data  Lc  tasks.o [1]
+xMinimumEverFreeBytesRemaining
+                        0x20000634     0x4  Data  Lc  heap_4.o [1]
+xNextTaskUnblockTime    0x2000b798     0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x2000b790     0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x2000b72c    0x14  Data  Lc  tasks.o [1]
+xPortStartScheduler     0x0801167d    0xa4  Code  Gb  port.o [1]
+xPortSysTickHandler     0x08011775    0x26  Code  Gb  port.o [1]
+xQueueGenericCreate     0x080110bf    0x48  Code  Gb  queue.o [1]
+xQueueGenericReceive    0x08011323   0x176  Code  Gb  queue.o [1]
+xQueueGenericReset      0x08011039    0x86  Code  Gb  queue.o [1]
+xQueueGenericSend       0x08011107   0x15c  Code  Gb  queue.o [1]
+xQueueGenericSendFromISR
+                        0x0801126f    0xac  Code  Gb  queue.o [1]
+xQueueRegistry          0x2000bdd0    0x40  Data  Gb  queue.o [1]
+xSchedulerRunning       0x2000b784     0x4  Data  Lc  tasks.o [1]
+xStart                  0x20000624     0x8  Data  Lc  heap_4.o [1]
+xSuspendedTaskList      0x2000b764    0x14  Data  Lc  tasks.o [1]
+xTaskCheckForTimeOut    0x0800d3ff    0x6a  Code  Gb  tasks.o [1]
+xTaskCreate             0x0800ce35    0x52  Code  Gb  tasks.o [1]
+xTaskGetSchedulerState  0x0800d4fb    0x18  Code  Gb  tasks.o [1]
+xTaskGetTickCount       0x0800d1d9     0x8  Code  Gb  tasks.o [1]
+xTaskGetTickCountFromISR
+                        0x0800d1e1     0xe  Code  Gb  tasks.o [1]
+xTaskIncrementTick      0x0800d1ef    0xc6  Code  Gb  tasks.o [1]
+xTaskPriorityDisinherit
+                        0x0800d593    0x92  Code  Gb  tasks.o [1]
+xTaskRemoveFromEventList
+                        0x0800d375    0x64  Code  Gb  tasks.o [1]
+xTaskResumeAll          0x0800d12d    0xac  Code  Gb  tasks.o [1]
+xTasksWaitingTermination
+                        0x2000b740    0x14  Data  Lc  tasks.o [1]
+xTickCount              0x2000b77c     0x4  Data  Lc  tasks.o [1]
+xTimerCreateTimerTask   0x08012629    0x3e  Code  Gb  timers.o [1]
+xTimerGenericCommand    0x08012667    0x5a  Code  Gb  timers.o [1]
+xTimerQueue             0x2000bffc     0x4  Data  Lc  timers.o [1]
+xTimerTaskHandle        0x2000c000     0x4  Data  Lc  timers.o [1]
+xYieldPending           0x2000b78c     0x4  Data  Lc  tasks.o [1]
+yawHold                 0x2000c2c4     0x4  Data  Lc  UserControl.o [1]
+
+
+[1] = G:\Projects\Starry\Starry\EWARM\UNIVERSKY\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  97 660 bytes of readonly  code memory
+   6 176 bytes of readonly  data memory
+  57 264 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

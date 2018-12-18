@@ -1,0 +1,10 @@
+universky\kalman3.o: ..\Math\Kalman3.c
+universky\kalman3.o: ..\Math\Kalman3.h
+universky\kalman3.o: ..\Math\mathTool.h
+universky\kalman3.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\kalman3.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\kalman3.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\kalman3.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\kalman3.o: ..\Math\vector3.h
+universky\kalman3.o: ..\Math\mathTool.h
+universky\kalman3.o: ..\Math\Matrix3.h

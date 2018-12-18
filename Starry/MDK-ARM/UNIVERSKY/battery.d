@@ -1,0 +1,9 @@
+universky\battery.o: ..\Modules\Battery.c
+universky\battery.o: ..\Modules\Battery.h
+universky\battery.o: ..\Math\mathTool.h
+universky\battery.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\battery.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\battery.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\battery.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\battery.o: ..\Math\vector3.h
+universky\battery.o: ..\Math\mathTool.h

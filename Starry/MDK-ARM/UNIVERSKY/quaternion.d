@@ -1,0 +1,9 @@
+universky\quaternion.o: ..\Math\Quaternion.c
+universky\quaternion.o: ..\Math\quaternion.h
+universky\quaternion.o: ..\Math\mathTool.h
+universky\quaternion.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\quaternion.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\quaternion.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\quaternion.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\quaternion.o: ..\Math\vector3.h
+universky\quaternion.o: ..\Math\mathTool.h

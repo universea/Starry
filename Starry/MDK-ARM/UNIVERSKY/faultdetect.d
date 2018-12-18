@@ -1,0 +1,9 @@
+universky\faultdetect.o: ..\UavSystem\FaultDetect.c
+universky\faultdetect.o: ..\UavSystem\faultDetect.h
+universky\faultdetect.o: ..\Math\mathTool.h
+universky\faultdetect.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\faultdetect.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\faultdetect.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\faultdetect.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\faultdetect.o: ..\Math\vector3.h
+universky\faultdetect.o: ..\Math\mathTool.h

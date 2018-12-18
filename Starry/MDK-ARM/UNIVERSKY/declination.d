@@ -1,0 +1,10 @@
+universky\declination.o: ..\Math\Declination.c
+universky\declination.o: ..\Math\Declination.h
+universky\declination.o: ..\Math\mathTool.h
+universky\declination.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\declination.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\declination.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\declination.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\declination.o: ..\Math\vector3.h
+universky\declination.o: ..\Math\mathTool.h
+universky\declination.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h

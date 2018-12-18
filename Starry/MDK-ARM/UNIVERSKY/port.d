@@ -1,0 +1,12 @@
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+universky\port.o: E:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+universky\port.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\port.o: ../Inc/FreeRTOSConfig.h
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+universky\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

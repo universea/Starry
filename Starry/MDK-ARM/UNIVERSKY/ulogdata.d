@@ -1,0 +1,10 @@
+universky\ulogdata.o: ..\Log\UlogData.c
+universky\ulogdata.o: ..\Log\UlogData.h
+universky\ulogdata.o: ..\Math\mathTool.h
+universky\ulogdata.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\ulogdata.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\ulogdata.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\ulogdata.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\ulogdata.o: ..\Math\vector3.h
+universky\ulogdata.o: ..\Math\mathTool.h
+universky\ulogdata.o: ..\Log\ulog.h

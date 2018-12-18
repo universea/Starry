@@ -1,0 +1,9 @@
+universky\lowpassfilter.o: ..\Math\LowPassFilter.c
+universky\lowpassfilter.o: ..\Math\lowPassFilter.h
+universky\lowpassfilter.o: ..\Math\mathTool.h
+universky\lowpassfilter.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\lowpassfilter.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\lowpassfilter.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\lowpassfilter.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\lowpassfilter.o: ..\Math\vector3.h
+universky\lowpassfilter.o: ..\Math\mathTool.h

@@ -1,0 +1,11 @@
+universky\logger.o: ..\Log\Logger.c
+universky\logger.o: ..\Log\logger.h
+universky\logger.o: ..\Math\mathTool.h
+universky\logger.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\logger.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\logger.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\logger.o: D:\MDK\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\logger.o: ..\Math\vector3.h
+universky\logger.o: ..\Math\mathTool.h
+universky\logger.o: ..\Log\ulog.h
+universky\logger.o: ..\Log\UlogData.h

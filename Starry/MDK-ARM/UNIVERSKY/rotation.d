@@ -1,0 +1,9 @@
+universky\rotation.o: ..\Math\Rotation.c
+universky\rotation.o: ..\Math\Rotation.h
+universky\rotation.o: ..\Math\mathTool.h
+universky\rotation.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\rotation.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\rotation.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\rotation.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\rotation.o: ..\Math\vector3.h
+universky\rotation.o: ..\Math\mathTool.h

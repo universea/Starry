@@ -1,0 +1,257 @@
+#ifndef _BSKLINK_H_
+#define _BSKLINK_H_
+
+#include "mathTool.h"
+
+#define BSKLINK_MSG_HEAD_1    0xDE
+#define BSKLINK_MSG_HEAD_2    0xED
+#define BSKLINK_DEVICE_ID     0x02
+#define BSKLINK_SYS_ID	      0x00
+
+#define BSKLINK_MAX_PAYLOAD_LENGTH 100
+
+/********************************************消息帧结构定义********************************************/
+typedef struct
+{
+    uint8_t head1;                                 //帧头
+    uint8_t head2;                                 //帧头
+    uint8_t deviceid;                              //设备ID
+    uint8_t sysid;								   //系统ID
+    uint8_t msgid;                                 //消息ID
+    uint8_t length;                                //数据负载长度
+    uint8_t payload[BSKLINK_MAX_PAYLOAD_LENGTH];   //数据负载
+    uint8_t checksum;                              //校验和
+
+    uint8_t recvStatus;                            //解析状态
+    uint8_t payloadRecvCnt;                        //负载接收计数
+} BSKLINK_MSG_t;
+
+/********************************************消息类型定义**********************************************/
+enum
+{
+    BSKLINK_MSG_ID_FLIGHT_DATA      = 0x01,     //基本飞行数据
+    BSKLINK_MSG_ID_FLIGHT_STATUS    = 0x02,     //飞控状态信息
+    BSKLINK_MSG_ID_SENSOR           = 0x03,     //传感器数据
+    BSKLINK_MSG_ID_SENSOR_CALI_DATA = 0x04,		//传感器校准数据
+    BSKLINK_MSG_ID_SENSOR_CALI_CMD  = 0x05,		//传感器校准命令
+    BSKLINK_MSG_ID_RC_DATA          = 0x08,     //遥控通道数据
+    BSKLINK_MSG_ID_MOTOR            = 0x09,     //电机输出
+    BSKLINK_MSG_ID_BATTERY          = 0x0A,     //电池信息
+    BSKLINK_MSG_ID_PID_ATT          = 0x10,     //姿态PID参数
+    BSKLINK_MSG_ID_PID_POS          = 0x11,     //位置PID参数
+    BSKLINK_MSG_ID_PID_ACK          = 0x12,     //PID读写响应
+    BSKLINK_MSG_ID_SETUP            = 0x15,     //飞控设置
+    BSKLINK_MSG_ID_GPS              = 0x20,     //GPS数据
+    BSKLINK_MSG_ID_SYS_ERROR 		= 0x25,		//系统错误信息
+    BSKLINK_MSG_ID_SYS_WARNING 		= 0x26,		//系统警告信息
+    BSKLINK_MSG_ID_ATT_ANALYSE      = 0x30,     //姿态估计与控制误差分析
+    BSKLINK_MSG_ID_VEL_ANALYSE      = 0x31,     //速度估计与控制误差分析
+    BSKLINK_MSG_ID_POS_ANALYSE      = 0x32,     //位置估计与控制误差分析
+    BSKLINK_MSG_ID_HEARTBEAT		= 0xFE		//心跳包
+};
+
+/******************************************数据负载结构体定义******************************************/
+//结构体按1字节方式对齐
+#pragma pack (1)
+
+//基本飞行数据
+typedef struct
+{
+    Vector3ForInt16 angle;       //姿态角 单位：0.1°
+    Vector3ForInt16 accel;       //地理系运动加速度 单位：cm/s²
+    Vector3ForInt16 accelLpf;    //低通滤波后的地理系运动加速度 单位：cm/s²
+    Vector3ForInt16 velocity;    //速度估计值  单位：cm/s
+    Vector3ForInt16 velMeasure;  //速度观测值  单位：cm/s
+    Vector3ForDouble position;    //位置估计值  单位：cm
+    Vector3ForDouble posMeasure;  //位置观测值  单位：cm
+} BSKLINK_PAYLOAD_FLIGHT_DATA_t;
+
+//飞控状态信息
+typedef struct
+{
+    uint8_t flightMode;		//飞行模式
+    uint8_t initStatus;		//初始化状态
+    uint8_t armedStatus;	//锁定状态
+    uint8_t flightStatus;   //飞行状态
+    uint8_t placeStatus;	//放置状态
+    uint8_t altCtlStatus;	//高度控制状态
+    uint8_t posCtlStatus;   //位置控制状态
+} BSKLINK_PAYLOAD_FLIGHT_STATUS_t;
+
+//传感器数据
+typedef struct
+{
+    Vector3ForInt16 gyro;        //角速度 单位：0.1°/s
+    Vector3ForInt16 gyroLpf;     //低通滤波后的角速度 单位：0.1°/s
+    int16_t    gyroTemp;    //陀螺仪温度 单位：0.01°
+    int8_t	   gyro_offset; //角速度零偏 单位：%
+    Vector3ForInt16 acc;         //加速度 单位：0.001g
+    Vector3ForInt16 accLpf;      //低通滤波后的加速度 单位：0.001g
+    int8_t	   acc_offset;  //加速度零偏 单位：%
+    Vector3ForInt16 mag;         //磁场强度 单位：0.001gauss
+    int8_t	   mag_offset;  //罗盘零偏  单位：%
+    int32_t    baroAlt;     //气压高度 单位：cm
+    int16_t    baroTemp;    //气压计温度 单位：0.01°
+} BSKLINK_PAYLOAD_SENSOR_t;
+
+//传感器校准数据
+typedef struct
+{
+    Vector3ForFloat gyro_offset; //角速度零偏误差 单位：1°/s
+    Vector3ForFloat gyro_scale;  //角速度刻度误差
+    Vector3ForFloat acc_offset;  //加速度零偏误差 单位：g
+    Vector3ForFloat acc_scale;   //加速度刻度误差
+    Vector3ForFloat mag_offset;  //磁力计零偏误差 单位：gauss
+    Vector3ForFloat mag_scale;   //磁力计刻度误差
+    Vector3ForFloat angle;		//IMU安装误差 单位：°
+} BSKLINK_PAYLOAD_SENSOR_CALI_DATA_t;
+
+//传感器校准命令
+typedef struct
+{
+    uint8_t type;			//传感器类型
+    uint8_t caliFlag;		//校准标志位
+    uint8_t successFlag;    //成功标志位
+    uint8_t step;			//校准步骤
+} BSKLINK_PAYLOAD_SENSOR_CALI_CMD_t;
+
+//遥控通道数据
+typedef struct
+{
+    int16_t roll;           //横滚
+    int16_t pitch;          //俯仰
+    int16_t yaw;            //偏航
+    int16_t throttle;       //油门
+    int16_t aux1;           //辅助通道1
+    int16_t aux2;           //辅助通道2
+    int16_t aux3;           //辅助通道3
+    int16_t aux4;           //辅助通道4
+    int16_t aux5;           //辅助通道5
+    int16_t aux6;           //辅助通道6
+    int16_t aux7;           //辅助通道7
+    int16_t aux8;           //辅助通道8
+} BSKLINK_PAYLOAD_RC_DATA_t;
+
+//电机输出
+typedef struct
+{
+    int8_t  num;            //电机数量
+    int16_t motorValue1;    //1号电机输出值
+    int16_t motorValue2;    //2号电机输出值
+    int16_t motorValue3;    //3号电机输出值
+    int16_t motorValue4;    //4号电机输出值
+    int16_t motorValue5;    //5号电机输出值
+    int16_t motorValue6;    //6号电机输出值
+    int16_t motorValue7;    //7号电机输出值
+    int16_t motorValue8;    //8号电机输出值
+} BSKLINK_PAYLOAD_MOTOR_t;
+
+//电池信息
+typedef struct
+{
+    int16_t voltage;        //电池电压 单位：0.01V
+    int16_t current;        //电池电流 单位：0.01A
+    int8_t  capacityPer;    //电池电量百分比（0xFF表示无电量数据）
+    int16_t capacity;       //电池设计容量 单位：mah
+    int16_t capRemain;      //电池当前剩余容量 单位：mah
+    int16_t temperature;    //电池温度 单位：0.01°
+    int8_t  cellNum;        //电芯节数
+    int16_t cellVolt[6];    //电芯电压（最多6节） 单位：0.01V
+} BSKLINK_PAYLOAD_BATTERY_t;
+
+//姿态PID参数
+typedef struct
+{
+    float roll_kp;          //横滚角速度环P
+    float roll_ki;          //横滚角速度环I
+    float roll_kd;          //横滚角速度环D
+    float pitch_kp;         //俯仰角速度环P
+    float pitch_ki;         //俯仰角速度环I
+    float pitch_kd;         //俯仰角速度环D
+    float yaw_kp;           //偏航角速度环P
+    float yaw_ki;           //偏航角速度环I
+    float yaw_kd;           //偏航角速度环D
+    float rollAngle_kp;     //横滚角度环P
+    float pitchAngle_kp;    //俯仰角度环P
+    float yawAngle_kp;      //偏航角度环P
+} BSKLINK_PAYLOAD_PID_ATT_t;
+
+//位置PID参数
+typedef struct
+{
+    float velX_kp;          //X轴速度环P
+    float velX_ki;          //X轴速度环I
+    float velX_kd;          //X轴速度环D
+    float velY_kp;          //Y轴速度环P
+    float velY_ki;          //Y轴速度环I
+    float velY_kd;          //Y轴速度环D
+    float velZ_kp;          //Z轴速度环P
+    float velZ_ki;          //Z轴速度环I
+    float velZ_kd;          //Z轴速度环D
+    float posX_kp;          //X轴位置环P
+    float posY_kp;          //Y轴位置环P
+    float posZ_kp;          //Z轴位置环P
+} BSKLINK_PAYLOAD_PID_POS_t;
+
+//PID读写响应
+typedef struct
+{
+    uint8_t flag;           //读写标志
+    uint8_t res;            //预留
+} BSKLINK_PAYLOAD_PID_ACK_t;
+
+enum
+{
+    PID_WRITE_FAILED = 1,	//PID写入失败
+    PID_WRITE_SUCCESS,		//PID写入成功
+};
+
+//GPS数据
+typedef struct
+{
+    float   time;           //当地时间 单位：秒
+    int8_t  numSV;          //卫星数量
+    int8_t  fixStatus;      //定位状态
+    int16_t hAcc;           //水平定位精度 单位：cm
+    int16_t vAcc;           //垂直定位精度 单位：cm
+    float   latitude;       //纬度
+    float   longitude;      //经度
+    float   altitude;       //高度 单位：m
+    int16_t velN;           //北向速度 单位：cm/s
+    int16_t velE;           //东向速度 单位：cm/s
+    int16_t velD;           //天向速度 单位：cm/s
+} BSKLINK_PAYLOAD_GPS_t;
+
+//姿态估计与控制误差分析
+typedef struct
+{
+    Vector3ForInt16 gyro;            //角速度 单位：0.1°/s
+    Vector3ForInt16 gyroLpf;         //角速度(滤波) 单位：0.1°/s
+    Vector3ForInt16 gyroTarget;      //目标角速度 单位：0.1°/s
+    Vector3ForInt16 angle;           //姿态角 单位：0.1°
+    Vector3ForInt16 angleTarget;     //目标姿态角 单位：0.1°
+    Vector3ForInt16 angleMeasure;    //姿态角测量值 单位：0.1°
+    Vector3ForInt16 angleEstError;   //姿态角估计误差 单位：0.1°
+    Vector3ForInt16 angleCtlError;   //姿态角控制误差 单位：0.1°
+} BSKLINK_MSG_ID_ATT_ANALYSE_t;
+
+//心跳包
+typedef struct
+{
+    uint8_t type;			//硬件类型
+    uint8_t version_high;	//飞控版本号高位
+    uint8_t version_mid;	//飞控版本号中位
+    uint8_t version_low;	//飞控版本号低位
+    int32_t time;           //系统时间 单位：毫秒
+    int8_t  freq;			//最大发送频率
+} BSKLINK_PAYLOAD_HEARTBEAT_t;
+
+#pragma pack ()
+
+void BsklinkMsgCalculateSum(BSKLINK_MSG_t* msg);
+void BsklinkMsgFormat(BSKLINK_MSG_t msg, uint8_t* msgTemp);
+bool BsklinkParseChar(BSKLINK_MSG_t* msg, uint8_t data);
+
+#endif
+
+

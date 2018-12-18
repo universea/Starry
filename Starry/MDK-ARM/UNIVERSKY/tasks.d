@@ -1,0 +1,16 @@
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+universky\tasks.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\tasks.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+universky\tasks.o: E:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+universky\tasks.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\tasks.o: ../Inc/FreeRTOSConfig.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+universky\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h

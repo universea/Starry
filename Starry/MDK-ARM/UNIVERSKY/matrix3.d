@@ -1,0 +1,9 @@
+universky\matrix3.o: ..\Math\Matrix3.c
+universky\matrix3.o: ..\Math\matrix3.h
+universky\matrix3.o: ..\Math\mathTool.h
+universky\matrix3.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+universky\matrix3.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+universky\matrix3.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+universky\matrix3.o: E:\MDK\ARM\ARMCC\Bin\..\include\math.h
+universky\matrix3.o: ..\Math\vector3.h
+universky\matrix3.o: ..\Math\mathTool.h
